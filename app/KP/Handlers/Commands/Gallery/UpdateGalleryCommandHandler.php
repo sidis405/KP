@@ -33,6 +33,7 @@ class UpdateGalleryCommandHandler
      */
     public function handle(UpdateGalleryCommand $command)
     {
+        
         $gallery_object = Gallery::edit(
             $command->gallery_id,
             $command->featured_image_id,

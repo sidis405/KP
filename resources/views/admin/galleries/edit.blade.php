@@ -17,7 +17,7 @@
   <section class="main">
       <div class="container">           
         <h1>Edit gallery item</h1>
-        <h2>In this section you may edit a gellery item.</h2>
+        <h2>In this section you may edit a gallery item.</h2>
 
         @include('layouts.errors')
         @include('flash::message')

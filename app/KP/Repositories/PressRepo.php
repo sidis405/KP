@@ -2,6 +2,7 @@
 
 namespace KP\Repositories;
 
+use KP\Models\FeaturedImage;
 use KP\Models\Press;
 
 class PressRepo
@@ -14,6 +15,14 @@ class PressRepo
         return $press;
     }
 
+    public function remove($id)
+    {
+        $activity = Press::find($id);
+        $activity->delete();
+
+        return true;
+    }
+
     public function getAll()
     {
         return Press::all();
@@ -21,11 +30,26 @@ class PressRepo
 
     public function getById($id)
     {
-        return Press::where('id', $id);
+        return Press::where('id', $id)->first();
     } 
 
     public function getBySlug($slug)
     {
-        return Press::where('slug', $slug);
+        return Press::where('slug', $slug)->first();
     } 
+
+    public function getMediaForId($id)
+    {
+        $album = $this->getById($id);
+        
+        return $album->getMedia();
+    }
+
+    public function removeImage($id)
+    {
+        $image = FeaturedImage::find($id);
+        $image->delete();
+
+        return true;
+    }
 }

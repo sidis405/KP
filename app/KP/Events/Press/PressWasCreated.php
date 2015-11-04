@@ -2,8 +2,8 @@
 
 namespace KP\Events\Press;
 
-use KP\Events\Event;
-use KP\Acam\Models\Press;
+use Event;
+use KP\Models\Press;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 

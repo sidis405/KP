@@ -23,6 +23,9 @@ function getImagesForActivityEditGallery() {
             $('#image-picker-select').html(data.image_picker_select);
             $("#featured_image_id_field").imagepicker({limit: 1});
             
+            $('#image-cover-select').html(data.image_picker_select_cover);
+            $("#cover_image_id_field").imagepicker({limit: 1});
+            
 
             doMagnificPopup();
 
@@ -100,14 +103,15 @@ $(document).on('click', '.delete-media', function() {
     var route = $(this).data('model');
     // console.log(route);
     var persisted_id = $('#featured_image_persisted').val();
+    var persisted_cover = $('#cover_image_persisted').val();
 
     // console
 
-    if (id == persisted_id) {
-        alert("Impossibile rimuovere questa immagine perchè è impostata come copertina");
+    if (id == persisted_id || id == persisted_cover ) {
+        alert("Cannot remove this imagege bacause it has been set for display.");
         return false;
     } else {
-        var c = confirm("Sei sicuro di voler rimuove permanentemente quest'immagine?");
+        var c = confirm("Are you sure you want to remove this image?");
 
         if (c) {
 
@@ -174,7 +178,7 @@ $('#toolbar-delete').click(function(){
 });
 
 $('#album_deletion_form').submit(function() {
-    var c = confirm("Sei sicuro di volere cancellare permanenetemente questo progetto?");
+    var c = confirm("Are you sure you permanentely want to remove this item?");
     return c; 
 });
 

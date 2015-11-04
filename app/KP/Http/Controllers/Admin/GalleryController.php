@@ -2,9 +2,10 @@
 
 namespace KP\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
-use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Requests;
+use Illuminate\Http\Request;
+use KP\Models\Gallery;
 use KP\Repositories\GalleryRepo;
 
 
@@ -85,6 +86,8 @@ class GalleryController extends Controller
     {
         $gallery = $this->dispatchFrom('KP\Commands\Gallery\UpdateGalleryCommand', $request);
 
+        flash()->success('Gallery updated successfully.');
+
         return redirect()->to('/admin/gallery/' . $gallery->id .'/edit');
     }
 
@@ -94,9 +97,13 @@ class GalleryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($id, GalleryRepo $gallery_repo)
     {
-        return Gallery::delete($id);
+        $delete = $gallery_repo->remove($id);
+
+        flash()->success('Gallery removed successfully.');
+
+        return redirect()->to('/admin/gallery/');
     }
 
     public function destroyImage(Request $request, GalleryRepo $gallery_repo)

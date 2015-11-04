@@ -16,38 +16,48 @@
 
   <section class="main">
       <div class="container">           
-        <h1>Modifica Progetto '{{ $album->name }}'</h1>
-        <h2> In questa sezione puoi modificare un progetto.</h2>
+        <h1>Edit Press Item</h1>
+        <h2>In this section you may edit a press item.</h2>
 
         @include('layouts.errors')
         @include('flash::message')
-        <form action="/admin/progetti/{{ $album->id }}" method="POST" id="album_editing_form">
-        <input type="hidden" name="album_id" value="{{ $album->id }}">
-        <input type="hidden" id="featured_image_persisted" value="{{ $album->featured_image_id }}">
-        <input type="hidden" name="featured_image_id" id="featured_image_id" value="{{ $album->featured_image_id }}">
+        <form action="/admin/press/{{ $press->id }}" method="POST" id="album_editing_form" enctype="multipart/form-data">
+        <input type="hidden" name="press_id" value="{{ $press->id }}">
+        <input type="hidden" id="cover_image_persisted" value="{{ $press->cover_image_id }}">
+        <input type="hidden" name="cover_image_id" id="cover_image_id" value="{{ $press->cover_image_id }}">
         {{csrf_field()}}
             <div class="card card-add-project">
-              <div class="card-header">
-                <h2>Dettagli progetto</h2>
-                <h3>Qui puoi scegliere il titolo e l'immagine di copertina di un progetto</h3>
-              </div>
+  
               <div class="card-body">
                   <div class="row">
-                    <div class="col-md-8">
-                      <h3>Titolo progetto</h3>
-                      <div class="input-material">
-                        <label for="" class="label-material"></label>
-                        <input type="text" name="name" value="{{ old('name', $album->name) }}" placeholder="Inserisci il titolo del progetto" class="input-field-material" required title="Questo campo non puo essere vuoto." x-moz-errormessage="Questo campo non puo essere vuoto.">
-                      </div>
-                    </div>
                     <div class="col-md-4 centered">
-                      <h3>Immagine di copertina</h3>
+                      <h3>Cover Image</h3>
                         <div class="form-group">
-                          <a id="selected_image_preview">
-                              <div class="thumbnail-preview-add" @if($album->featured_image_id > 0) style="background: url('/image/{{$album->featuredImage->id}}/{{$album->featuredImage->file_name}}?w=280&h=280&fit=crop') no-repeat center center;" @endif >
-                                <div class="btn">Scegli immagine di copertina</div>
+                          <a id="cover_image_preview">
+                              <div class="thumbnail-preview-add thumbnail-preview-add-cover" @if($press->cover_image_id > 0) style="background: url('/image/{{$press->coverImage->id}}/{{$press->coverImage->file_name}}?w=280&h=280&fit=crop') no-repeat center center;" @endif >
+                                <div class="btn">Choose a cover image</div>
                               </div>
                           </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                      <h3>Url address of the press item</h3>
+                      <div class="input-material">
+                      @if(strlen($press->path))
+                            <a href="{{$press->path}}" target="_blank"><i class="fa fa-external-link"></i></a>
+                      @endif
+                        <label for="" class="label-material"></label>
+                        <input type="text" name="path" value="{{ old('name', $press->path) }}" placeholder="example: http://www.example.com/KP" class="input-field-material" required title="This field is obligatory." x-moz-errormessage="This field is obligatory.">
+                      </div>
+
+                    <br>
+                    <br>
+
+                      <div class="form-group">
+                          <div class="input-material">
+                            <label for="" class="label-material">Or upload an attachment</label>
+                            <input type="file" name="attachment" >
+                          </div>
                         </div>
                     </div>
                   </div>
@@ -59,16 +69,16 @@
         <br>
 
       
-      @include('admin.gallery.gallery-section', array('model' => $album, 'model_name' => 'albums', 'model_route' => 'progetti'))
+      @include('admin.gallery.gallery-section', array('model' => $press, 'model_name' => 'press', 'model_route' => 'press'))
       <div class="centered">
-              <button id="toolbar-save-form" class="btn btn-green">Salva</button>
-              <a href="/admin/progetti" class="btn btn-orange">Abbandona</a>
+              <button id="toolbar-save-form" class="btn btn-green">Save</button>
+              <a href="/admin/press" class="btn btn-orange">Reset</a>
             </div>
         </div>
 
       </div>
 
-      <form method="POST" action="/admin/progetti/{{ $album->id }}/rimuovi" id="album_deletion_form">
+      <form method="POST" action="/admin/press/{{ $press->id }}/remove" id="album_deletion_form">
                         {{ csrf_field() }} </form>
 
     </section>
@@ -82,7 +92,6 @@
 
 <script type="text/javascript">
     
-    $("#featured_image_id_field").imagepicker({limit: 1});
     $("#cover_image_id_field").imagepicker({limit: 1});
 
     function doMagnificPopup () {

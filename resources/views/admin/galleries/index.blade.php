@@ -3,10 +3,10 @@
 @section('content')
 
  @include('layouts.errors')
-        @include('flash::message')
 
 <section class="main">
       <div class="container">     
+        @include('flash::message')
         <h1>Gallery Items List</h1>
         <h2>In this section you may browse the media items present on the Gallery section of the site.</h2>
         <div class="actions"><a href="/admin/gallery/create">

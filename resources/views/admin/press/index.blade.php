@@ -3,10 +3,10 @@
 @section('content')
 
  @include('layouts.errors')
-        @include('flash::message')
 
 <section class="main">
       <div class="container">     
+        @include('flash::message')
         <h1>Press Items List</h1>
         <h2>In this section you may browse the media items present on the Press section of the site.</h2>
         <div class="actions"><a href="/admin/press/create">
@@ -20,14 +20,14 @@
               <thead>
                 <tr>
                   <th>Cover image</th>
-                  <th>Main image</th>
+                  <th>Url</th>
                 </tr>
               </thead>
               <tbody>
               @foreach($press as $item)
                 <tr href="/admin/press/{{$item->id}}/edit">
                   <td>
-                    <div class="thumbnail-preview-list" @if($item->featured_image_id > 0) style="background: url('/image/{{$item->featuredImage->id}}/{{$item->coverImage->file_name}}?w=120&h=120&fit=crop') no-repeat center center;" @endif ></div>
+                    <div class="thumbnail-preview-list" @if($item->cover_image_id > 0) style="background: url('/image/{{$item->coverImage->id}}/{{$item->coverImage->file_name}}?w=120&h=120&fit=crop') no-repeat center center;" @endif ></div>
                   </td>
                   <td>
                     <a href="{{$item->path}}" target="_blank">{{$item->path}}</a>

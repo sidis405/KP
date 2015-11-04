@@ -1,13 +1,15 @@
 <?php
 
-namespace KP\Handlers\Commands;
+namespace KP\Handlers\Commands\Press;
 
-use KP\Commands\CreateTestCommand;
-use KP\Models\Press;
+use Event;
 use Illuminate\Queue\InteractsWithQueue;
-use KP\Repositories\PressRepo;
+use KP\Commands\CreateTestCommand;
+use KP\Commands\Press\UpdatePressCommand;
 use KP\Events\Press\PressWasUpdated;
-use Events;
+use KP\Models\Press;
+use KP\Utils\Uploads;
+use KP\Repositories\PressRepo;
 
 
 class UpdatePressCommandHandler
@@ -30,12 +32,23 @@ class UpdatePressCommandHandler
      * @param  UpdatePressCommand  $command
      * @return void
      */
-    public function handle(CreatePressCommand $command)
+    public function handle(UpdatePressCommand $command)
     {
+
+        if($command->attachment){
+
+            $up = new Uploads;
+            $path = $up->uploadAttachment($command->attachment);
+
+        }else{
+            $path = $command->path;
+        }
+
+
         $press_object = Press::edit(
-            $command->id,
-            $command->cover_photo_id,
-        $command->path
+            $command->press_id,
+            $command->cover_image_id,
+            $path
             );
 
         $press = $this->repo->save($press_object);

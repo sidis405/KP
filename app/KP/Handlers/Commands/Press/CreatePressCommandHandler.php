@@ -2,12 +2,12 @@
 
 namespace KP\Handlers\Commands\Press;
 
-use KP\Commands\CreatePressCommand;
+use KP\Commands\Press\CreatePressCommand;
 use KP\Models\Press;
 use Illuminate\Queue\InteractsWithQueue;
 use KP\Repositories\PressRepo;
 use KP\Events\Press\PressWasCreated;
-use Events;
+use Event;
 
 
 class CreatePressCommandHandler
@@ -32,10 +32,7 @@ class CreatePressCommandHandler
      */
     public function handle(CreatePressCommand $command)
     {
-        $press_object = Press::make(
-            $command->cover_photo_id,
-        $command->path
-            );
+        $press_object = Press::make();
 
         $press = $this->repo->save($press_object);
 

@@ -15,18 +15,18 @@ class Press extends Model implements HasMedia
     protected $presenter = 'KP\Presenters\PressPresenter';
     protected $table = 'press';
 
-    public static function make($cover_photo_id, $path)
+    public static function make()
     {
-        $item = new static(compact('cover_photo_id', 'path'));
+        $item = new static();
 
         return $item;
     }
 
-    public static function edit($item_id, $cover_photo_id, $path)
+    public static function edit($item_id, $cover_image_id, $path)
     {
         $item = static::find($item_id);
 
-        $item->cover_photo_id = $cover_photo_id;
+        $item->cover_image_id = $cover_image_id;
         $item->path = $path;
 
         return $item;
@@ -36,6 +36,11 @@ class Press extends Model implements HasMedia
 
         return $this->hasMany('KP\Models\Attachments', 'album_id');
 
+    }
+
+      public function coverImage()
+    {
+        return $this->belongsTo('KP\Models\FeaturedImage', 'cover_image_id');
     }
 
 

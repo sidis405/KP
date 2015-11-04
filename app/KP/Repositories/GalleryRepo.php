@@ -15,6 +15,14 @@ class GalleryRepo
         return $gallery;
     }
 
+    public function remove($id)
+    {
+        $activity = Gallery::find($id);
+        $activity->delete();
+
+        return true;
+    }
+
     public function getAll()
     {
         return Gallery::all();

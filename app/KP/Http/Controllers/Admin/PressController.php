@@ -24,15 +24,7 @@ class PressController extends Controller
     }
 
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        return view('admin.press.create');
-    }
+ 
 
     /**
      * Store a newly created resource in storage.
@@ -40,7 +32,7 @@ class PressController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function create(Request $request)
     {
         $press = $this->dispatchFrom('KP\Commands\Press\CreatePressCommand', $request);
         
@@ -82,7 +74,9 @@ class PressController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $press = $this->dispatchFrom('KP\Commands\Press\CreatePressCommand', $request);
+        $press = $this->dispatchFrom('KP\Commands\Press\UpdatePressCommand', $request);
+
+        flash()->success('Press area updated successfully.');
 
         return redirect()->to('/admin/press/' . $press->id .'/edit');
     }
@@ -93,8 +87,21 @@ class PressController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($id, PressRepo $press)
     {
-        return Press::delete($id);
+        $delete = $press->remove($id);
+
+        flash()->success('Press item removed successfully.');
+
+        return redirect()->to('/admin/press/');
+    }
+
+    public function destroyImage(Request $request, PressRepo $press_repo)
+    {
+        $image_id = $request->input('image_id');
+
+        $delete = $press_repo->removeImage($image_id);
+
+        return json_encode('true');
     }
 }

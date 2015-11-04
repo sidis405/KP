@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.34)
 # Database: kastner
-# Generation Time: 2015-11-04 17:55:09 +0000
+# Generation Time: 2015-11-04 18:25:16 +0000
 # ************************************************************
 
 
@@ -39,7 +39,33 @@ LOCK TABLES `gallery` WRITE;
 
 INSERT INTO `gallery` (`id`, `featured_image_id`, `cover_image_id`, `created_at`, `updated_at`)
 VALUES
-	(1,2,1,'2015-11-04 13:46:18','2015-11-04 16:16:54');
+	(4,18,17,'2015-11-04 18:00:24','2015-11-04 18:01:15'),
+	(5,19,20,'2015-11-04 18:01:25','2015-11-04 18:01:49'),
+	(6,21,22,'2015-11-04 18:02:04','2015-11-04 18:02:28'),
+	(7,23,24,'2015-11-04 18:02:36','2015-11-04 18:02:57'),
+	(8,26,25,'2015-11-04 18:03:53','2015-11-04 18:04:28'),
+	(9,27,28,'2015-11-04 18:04:31','2015-11-04 18:04:53'),
+	(10,30,29,'2015-11-04 18:04:58','2015-11-04 18:05:19'),
+	(11,32,31,'2015-11-04 18:05:45','2015-11-04 18:06:06'),
+	(12,33,34,'2015-11-04 18:06:09','2015-11-04 18:06:27'),
+	(13,36,35,'2015-11-04 18:06:40','2015-11-04 18:06:59'),
+	(14,37,38,'2015-11-04 18:07:01','2015-11-04 18:07:17'),
+	(15,40,39,'2015-11-04 18:07:19','2015-11-04 18:07:35'),
+	(16,41,42,'2015-11-04 18:07:37','2015-11-04 18:07:55'),
+	(17,43,44,'2015-11-04 18:08:09','2015-11-04 18:08:31'),
+	(18,46,45,'2015-11-04 18:08:35','2015-11-04 18:08:55'),
+	(19,47,48,'2015-11-04 18:08:58','2015-11-04 18:09:14'),
+	(20,50,49,'2015-11-04 18:09:31','2015-11-04 18:09:51'),
+	(21,51,52,'2015-11-04 18:09:54','2015-11-04 18:11:05'),
+	(22,53,54,'2015-11-04 18:10:21','2015-11-04 18:11:33'),
+	(23,55,56,'2015-11-04 18:11:08','2015-11-04 18:12:00'),
+	(24,58,57,'2015-11-04 18:12:06','2015-11-04 18:12:25'),
+	(25,60,59,'2015-11-04 18:12:35','2015-11-04 18:12:58'),
+	(26,62,61,'2015-11-04 18:13:04','2015-11-04 18:13:26'),
+	(27,64,63,'2015-11-04 18:13:29','2015-11-04 18:13:50'),
+	(28,65,66,'2015-11-04 18:13:53','2015-11-04 18:14:23'),
+	(29,67,68,'2015-11-04 18:14:30','2015-11-04 18:14:47'),
+	(30,69,70,'2015-11-04 18:14:50','2015-11-04 18:15:10');
 
 /*!40000 ALTER TABLE `gallery` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -73,15 +99,66 @@ LOCK TABLES `media` WRITE;
 
 INSERT INTO `media` (`id`, `model_id`, `model_type`, `collection_name`, `name`, `file_name`, `disk`, `size`, `manipulations`, `custom_properties`, `order_column`, `created_at`, `updated_at`)
 VALUES
-	(1,1,'KP\\Models\\Gallery','images','01_HP_RESTAURO 2','01_HP_RESTAURO 2.jpg','uploads',118077,'[]','[]',1,'2015-11-04 15:33:07','2015-11-04 15:33:07'),
-	(2,1,'KP\\Models\\Gallery','images','casa5','casa5.JPG','uploads',609886,'[]','[]',2,'2015-11-04 15:34:10','2015-11-04 15:34:10'),
-	(7,1,'KP\\Models\\Gallery','images','NYC-by-Bicycle-1 2','NYC-by-Bicycle-1 2.jpg','uploads',776942,'[]','[]',5,'2015-11-04 16:57:01','2015-11-04 16:57:01'),
 	(10,7,'KP\\Models\\Press','images','impakter-press','impakter-press.jpg','uploads',38074,'[]','[]',6,'2015-11-04 17:34:46','2015-11-04 17:34:46'),
 	(11,8,'KP\\Models\\Press','images','upload-your-talent-press','upload-your-talent-press.jpg','uploads',27125,'[]','[]',7,'2015-11-04 17:35:16','2015-11-04 17:35:16'),
 	(12,9,'KP\\Models\\Press','images','storytalia-press','storytalia-press.jpg','uploads',19273,'[]','[]',8,'2015-11-04 17:35:36','2015-11-04 17:35:36'),
 	(13,10,'KP\\Models\\Press','images','invitedrome-press','invitedrome-press.jpg','uploads',9649,'[]','[]',9,'2015-11-04 17:35:59','2015-11-04 17:35:59'),
 	(14,11,'KP\\Models\\Press','images','officiel-press','officiel-press.jpg','uploads',14501,'[]','[]',10,'2015-11-04 17:36:36','2015-11-04 17:36:36'),
-	(15,12,'KP\\Models\\Press','images','grazia-press','grazia-press.jpg','uploads',13820,'[]','[]',11,'2015-11-04 17:37:10','2015-11-04 17:37:10');
+	(15,12,'KP\\Models\\Press','images','grazia-press','grazia-press.jpg','uploads',13820,'[]','[]',11,'2015-11-04 17:37:10','2015-11-04 17:37:10'),
+	(17,4,'KP\\Models\\Gallery','images','gallery01','gallery01.jpg','uploads',21077,'[]','[]',12,'2015-11-04 18:01:03','2015-11-04 18:01:03'),
+	(18,4,'KP\\Models\\Gallery','images','gallery01-big','gallery01-big.jpg','uploads',122391,'[]','[]',12,'2015-11-04 18:01:03','2015-11-04 18:01:03'),
+	(19,5,'KP\\Models\\Gallery','images','gallery02-big','gallery02-big.jpg','uploads',225902,'[]','[]',13,'2015-11-04 18:01:39','2015-11-04 18:01:39'),
+	(20,5,'KP\\Models\\Gallery','images','gallery02','gallery02.jpg','uploads',25127,'[]','[]',13,'2015-11-04 18:01:39','2015-11-04 18:01:39'),
+	(21,6,'KP\\Models\\Gallery','images','gallery03-big','gallery03-big.jpg','uploads',203701,'[]','[]',14,'2015-11-04 18:02:19','2015-11-04 18:02:19'),
+	(22,6,'KP\\Models\\Gallery','images','gallery03','gallery03.jpg','uploads',21422,'[]','[]',14,'2015-11-04 18:02:19','2015-11-04 18:02:19'),
+	(23,7,'KP\\Models\\Gallery','images','gallery04-big','gallery04-big.jpg','uploads',164403,'[]','[]',15,'2015-11-04 18:02:49','2015-11-04 18:02:49'),
+	(24,7,'KP\\Models\\Gallery','images','gallery04','gallery04.jpg','uploads',19111,'[]','[]',15,'2015-11-04 18:02:49','2015-11-04 18:02:49'),
+	(25,8,'KP\\Models\\Gallery','images','gallery05','gallery05.jpg','uploads',20426,'[]','[]',16,'2015-11-04 18:04:20','2015-11-04 18:04:20'),
+	(26,8,'KP\\Models\\Gallery','images','gallery05-big','gallery05-big.jpg','uploads',202687,'[]','[]',16,'2015-11-04 18:04:20','2015-11-04 18:04:20'),
+	(27,9,'KP\\Models\\Gallery','images','gallery06-big','gallery06-big.jpg','uploads',170284,'[]','[]',17,'2015-11-04 18:04:44','2015-11-04 18:04:44'),
+	(28,9,'KP\\Models\\Gallery','images','gallery06','gallery06.jpg','uploads',20369,'[]','[]',17,'2015-11-04 18:04:44','2015-11-04 18:04:44'),
+	(29,10,'KP\\Models\\Gallery','images','gallery07','gallery07.jpg','uploads',19893,'[]','[]',18,'2015-11-04 18:05:10','2015-11-04 18:05:10'),
+	(30,10,'KP\\Models\\Gallery','images','gallery07-big','gallery07-big.jpg','uploads',122807,'[]','[]',18,'2015-11-04 18:05:10','2015-11-04 18:05:10'),
+	(31,11,'KP\\Models\\Gallery','images','gallery08','gallery08.jpg','uploads',24689,'[]','[]',19,'2015-11-04 18:05:58','2015-11-04 18:05:58'),
+	(32,11,'KP\\Models\\Gallery','images','gallery08-big','gallery08-big.jpg','uploads',269096,'[]','[]',19,'2015-11-04 18:05:58','2015-11-04 18:05:58'),
+	(33,12,'KP\\Models\\Gallery','images','gallery09-big','gallery09-big.jpg','uploads',184431,'[]','[]',20,'2015-11-04 18:06:19','2015-11-04 18:06:19'),
+	(34,12,'KP\\Models\\Gallery','images','gallery09','gallery09.jpg','uploads',24000,'[]','[]',20,'2015-11-04 18:06:19','2015-11-04 18:06:19'),
+	(35,13,'KP\\Models\\Gallery','images','gallery10','gallery10.jpg','uploads',21201,'[]','[]',21,'2015-11-04 18:06:50','2015-11-04 18:06:50'),
+	(36,13,'KP\\Models\\Gallery','images','gallery10-big','gallery10-big.jpg','uploads',186603,'[]','[]',21,'2015-11-04 18:06:50','2015-11-04 18:06:50'),
+	(37,14,'KP\\Models\\Gallery','images','gallery11-big','gallery11-big.jpg','uploads',197924,'[]','[]',22,'2015-11-04 18:07:10','2015-11-04 18:07:10'),
+	(38,14,'KP\\Models\\Gallery','images','gallery11','gallery11.jpg','uploads',21760,'[]','[]',23,'2015-11-04 18:07:10','2015-11-04 18:07:10'),
+	(39,15,'KP\\Models\\Gallery','images','gallery12','gallery12.jpg','uploads',24416,'[]','[]',24,'2015-11-04 18:07:27','2015-11-04 18:07:27'),
+	(40,15,'KP\\Models\\Gallery','images','gallery12-big','gallery12-big.jpg','uploads',239147,'[]','[]',24,'2015-11-04 18:07:27','2015-11-04 18:07:27'),
+	(41,16,'KP\\Models\\Gallery','images','gallery13-big','gallery13-big.jpg','uploads',306287,'[]','[]',25,'2015-11-04 18:07:46','2015-11-04 18:07:46'),
+	(42,16,'KP\\Models\\Gallery','images','gallery13','gallery13.jpg','uploads',47076,'[]','[]',26,'2015-11-04 18:07:46','2015-11-04 18:07:46'),
+	(43,17,'KP\\Models\\Gallery','images','gallery14-big','gallery14-big.jpg','uploads',150042,'[]','[]',27,'2015-11-04 18:08:23','2015-11-04 18:08:23'),
+	(44,17,'KP\\Models\\Gallery','images','gallery14','gallery14.jpg','uploads',19856,'[]','[]',27,'2015-11-04 18:08:23','2015-11-04 18:08:23'),
+	(45,18,'KP\\Models\\Gallery','images','gallery15','gallery15.jpg','uploads',30213,'[]','[]',28,'2015-11-04 18:08:47','2015-11-04 18:08:47'),
+	(46,18,'KP\\Models\\Gallery','images','gallery15-big','gallery15-big.jpg','uploads',200800,'[]','[]',28,'2015-11-04 18:08:47','2015-11-04 18:08:47'),
+	(47,19,'KP\\Models\\Gallery','images','gallery16_big','gallery16_big.jpg','uploads',227055,'[]','[]',29,'2015-11-04 18:09:06','2015-11-04 18:09:06'),
+	(48,19,'KP\\Models\\Gallery','images','gallery16','gallery16.jpg','uploads',28450,'[]','[]',29,'2015-11-04 18:09:06','2015-11-04 18:09:06'),
+	(49,20,'KP\\Models\\Gallery','images','gallery17','gallery17.jpg','uploads',27825,'[]','[]',30,'2015-11-04 18:09:40','2015-11-04 18:09:40'),
+	(50,20,'KP\\Models\\Gallery','images','gallery17_big','gallery17_big.jpg','uploads',239780,'[]','[]',30,'2015-11-04 18:09:40','2015-11-04 18:09:40'),
+	(51,21,'KP\\Models\\Gallery','images','gallery18_big','gallery18_big.jpg','uploads',243464,'[]','[]',31,'2015-11-04 18:10:56','2015-11-04 18:10:56'),
+	(52,21,'KP\\Models\\Gallery','images','gallery18','gallery18.jpg','uploads',26637,'[]','[]',31,'2015-11-04 18:10:56','2015-11-04 18:10:56'),
+	(53,22,'KP\\Models\\Gallery','images','gallery19_big','gallery19_big.jpg','uploads',150588,'[]','[]',32,'2015-11-04 18:11:24','2015-11-04 18:11:24'),
+	(54,22,'KP\\Models\\Gallery','images','gallery19','gallery19.jpg','uploads',24037,'[]','[]',32,'2015-11-04 18:11:24','2015-11-04 18:11:24'),
+	(55,23,'KP\\Models\\Gallery','images','gallery20_big','gallery20_big.jpg','uploads',145967,'[]','[]',33,'2015-11-04 18:11:47','2015-11-04 18:11:47'),
+	(56,23,'KP\\Models\\Gallery','images','gallery20','gallery20.jpg','uploads',30389,'[]','[]',34,'2015-11-04 18:11:47','2015-11-04 18:11:47'),
+	(57,24,'KP\\Models\\Gallery','images','gallery21','gallery21.jpg','uploads',22335,'[]','[]',35,'2015-11-04 18:12:14','2015-11-04 18:12:14'),
+	(58,24,'KP\\Models\\Gallery','images','gallery21_big','gallery21_big.jpg','uploads',142572,'[]','[]',35,'2015-11-04 18:12:14','2015-11-04 18:12:14'),
+	(59,25,'KP\\Models\\Gallery','images','gallery22','gallery22.jpg','uploads',25074,'[]','[]',36,'2015-11-04 18:12:49','2015-11-04 18:12:49'),
+	(60,25,'KP\\Models\\Gallery','images','gallery22_big','gallery22_big.jpg','uploads',143910,'[]','[]',36,'2015-11-04 18:12:49','2015-11-04 18:12:49'),
+	(61,26,'KP\\Models\\Gallery','images','gallery23','gallery23.jpg','uploads',15873,'[]','[]',37,'2015-11-04 18:13:18','2015-11-04 18:13:18'),
+	(62,26,'KP\\Models\\Gallery','images','gallery23_big','gallery23_big.jpg','uploads',155871,'[]','[]',37,'2015-11-04 18:13:18','2015-11-04 18:13:18'),
+	(63,27,'KP\\Models\\Gallery','images','gallery24','gallery24.jpg','uploads',19573,'[]','[]',38,'2015-11-04 18:13:43','2015-11-04 18:13:43'),
+	(64,27,'KP\\Models\\Gallery','images','gallery24_big','gallery24_big.jpg','uploads',116889,'[]','[]',38,'2015-11-04 18:13:43','2015-11-04 18:13:43'),
+	(65,28,'KP\\Models\\Gallery','images','gallery25_big','gallery25_big.jpg','uploads',189928,'[]','[]',39,'2015-11-04 18:14:07','2015-11-04 18:14:07'),
+	(66,28,'KP\\Models\\Gallery','images','gallery25','gallery25.jpg','uploads',28154,'[]','[]',40,'2015-11-04 18:14:07','2015-11-04 18:14:07'),
+	(67,29,'KP\\Models\\Gallery','images','gallery26_big','gallery26_big.jpg','uploads',222419,'[]','[]',41,'2015-11-04 18:14:38','2015-11-04 18:14:38'),
+	(68,29,'KP\\Models\\Gallery','images','gallery26','gallery26.jpg','uploads',24139,'[]','[]',41,'2015-11-04 18:14:38','2015-11-04 18:14:38'),
+	(69,30,'KP\\Models\\Gallery','images','gallery27_big','gallery27_big.jpg','uploads',174387,'[]','[]',42,'2015-11-04 18:14:59','2015-11-04 18:14:59'),
+	(70,30,'KP\\Models\\Gallery','images','gallery27','gallery27.jpg','uploads',33155,'[]','[]',42,'2015-11-04 18:14:59','2015-11-04 18:14:59');
 
 /*!40000 ALTER TABLE `media` ENABLE KEYS */;
 UNLOCK TABLES;

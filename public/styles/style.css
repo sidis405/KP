@@ -141,7 +141,7 @@
 body {
   font-family: 'Muli';
   font-weight: 300;
-  overflow-x: hidden;
+  overflow-x: hidden!important;
 }
 body p {
   font-size: 14px !important;

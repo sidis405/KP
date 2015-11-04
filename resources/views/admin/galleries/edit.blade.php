@@ -18,6 +18,9 @@
       <div class="container">           
         <h1>Edit gallery item</h1>
         <h2>In this section you may edit a gallery item.</h2>
+        <div class="actions"><a href="/admin/gallery/create">
+            <div class="btn btn-green btn-circle"><i class="fa fa-plus"></i></div></a><span>Add another item     </span></div>
+        <div class="card tables-card">
 
         @include('layouts.errors')
         @include('flash::message')

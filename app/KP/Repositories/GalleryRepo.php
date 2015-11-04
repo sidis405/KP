@@ -28,6 +28,11 @@ class GalleryRepo
         return Gallery::all();
     } 
 
+    public function getAllFront()
+    {
+        return Gallery::with('coverImage', 'featuredImage')->get();
+    } 
+
     public function getById($id)
     {
         return Gallery::where('id', $id)->first();

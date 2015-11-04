@@ -17,24 +17,14 @@ class GalleryController extends Controller
      */
     public function index(GalleryRepo $gallery_repo)
     {
-        $gallery = $gallery_repo->getAll();
+        $gallery = $gallery_repo->getAllFront();
 
-        return view('gallery.index', compact('gallery'));
+        \Session::put('path', 'gallery');
+        $title = prepTitle('gallery', 'Kastner &amp; Pallavicino');
+
+        return view('gallery.index', compact('gallery', 'title'));
 
     }
 
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id, GalleryRepo $gallery_repo)
-    {
-        $gallery = $gallery_repo->getById($id);
-
-        return view('gallery.show', compact('gallery'));
-    }
 
 }

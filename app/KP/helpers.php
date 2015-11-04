@@ -4,7 +4,6 @@ function checkActivePath($path, $last = false)
 {
     if( \Session::get('path') == $path)
     {
-        logger('hit');
 
         if($last) return ' active ';
 

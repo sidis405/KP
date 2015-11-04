@@ -1,5 +1,5 @@
 @extends('layouts.master')
-
+@section('title', 'Kastner &amp; Pallavicino')
 @section('content')
 
 

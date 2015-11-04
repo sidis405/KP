@@ -13,6 +13,7 @@ class Press extends Model implements HasMedia
     use PresentableTrait, HasMediaTrait;
 
     protected $presenter = 'KP\Presenters\PressPresenter';
+    protected $table = 'press';
 
     public static function make($cover_photo_id, $path)
     {

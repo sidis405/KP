@@ -2,8 +2,8 @@
 
 namespace KP\Events\Gallery;
 
-use KP\Events\Event;
-use KP\Acam\Models\Gallery;
+use Event;
+use KP\Models\Gallery;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 

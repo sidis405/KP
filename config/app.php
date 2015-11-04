@@ -145,6 +145,14 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        'Laracasts\Flash\FlashServiceProvider',
+        'Illuminate\Html\HtmlServiceProvider',
+        Barryvdh\Debugbar\ServiceProvider::class,
+        Spatie\MediaLibrary\MediaLibraryServiceProvider::class,
+        // 'Vinkla\Hashids\HashidsServiceProvider',
+        // 'Rutorika\Sortable\SortableServiceProvider',
+        App\Providers\BusServiceProvider::class
+
     ],
 
     /*
@@ -194,6 +202,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
+        'Flash' => 'Laracasts\Flash\Flash',
+        'Form'=> 'Illuminate\Html\FormFacade',
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
 ];

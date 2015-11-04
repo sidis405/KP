@@ -1,13 +1,14 @@
 <?php
 
-namespace KP\Handlers\Commands;
+namespace KP\Handlers\Commands\Gallery;
 
-use KP\Commands\CreateTestCommand;
-use KP\Models\Gallery;
+use Event;
 use Illuminate\Queue\InteractsWithQueue;
-use KP\Repositories\GalleryRepo;
+use KP\Commands\Gallery\CreateTestCommand;
+use KP\Commands\Gallery\UpdateGalleryCommand;
 use KP\Events\Gallery\GalleryWasUpdated;
-use Events;
+use KP\Models\Gallery;
+use KP\Repositories\GalleryRepo;
 
 
 class UpdateGalleryCommandHandler
@@ -30,12 +31,12 @@ class UpdateGalleryCommandHandler
      * @param  UpdateGalleryCommand  $command
      * @return void
      */
-    public function handle(CreateGalleryCommand $command)
+    public function handle(UpdateGalleryCommand $command)
     {
         $gallery_object = Gallery::edit(
-            $command->id,
-            $command->featured_photo_id,
-        $command->cover_photo_id
+            $command->gallery_id,
+            $command->featured_image_id,
+        $command->cover_image_id
             );
 
         $gallery = $this->repo->save($gallery_object);

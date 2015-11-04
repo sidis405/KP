@@ -2,12 +2,12 @@
 
 namespace KP\Handlers\Commands\Gallery;
 
-use KP\Commands\CreateGalleryCommand;
+use KP\Commands\Gallery\CreateGalleryCommand;
 use KP\Models\Gallery;
 use Illuminate\Queue\InteractsWithQueue;
 use KP\Repositories\GalleryRepo;
 use KP\Events\Gallery\GalleryWasCreated;
-use Events;
+use Event;
 
 
 class CreateGalleryCommandHandler
@@ -32,10 +32,7 @@ class CreateGalleryCommandHandler
      */
     public function handle(CreateGalleryCommand $command)
     {
-        $gallery_object = Gallery::make(
-            $command->featured_photo_id,
-        $command->cover_photo_id
-            );
+        $gallery_object = Gallery::make();
 
         $gallery = $this->repo->save($gallery_object);
 

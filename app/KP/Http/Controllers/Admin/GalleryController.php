@@ -19,7 +19,7 @@ class GalleryController extends Controller
     {
         $gallery = $gallery_repo->getAll();
 
-        return view('admin.gallery.index', compact('gallery'));
+        return view('admin.galleries.index', compact('gallery'));
 
     }
 
@@ -29,10 +29,10 @@ class GalleryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        return view('admin.gallery.create');
-    }
+    // public function create(Request $request)
+    // {
+    //     return view('admin.galleries.create');
+    // }
 
     /**
      * Store a newly created resource in storage.
@@ -40,7 +40,7 @@ class GalleryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function create(Request $request)
     {
         $gallery = $this->dispatchFrom('KP\Commands\Gallery\CreateGalleryCommand', $request);
         
@@ -57,7 +57,7 @@ class GalleryController extends Controller
     {
         $gallery = $gallery_repo->getById($id);
 
-        return view('admin.gallery.show', compact('gallery'));
+        return view('admin.galleries.show', compact('gallery'));
     }
 
     /**
@@ -70,7 +70,8 @@ class GalleryController extends Controller
     {
         $gallery = $gallery_repo->getById($id);
 
-        return view('admin.gallery.edit', compact('gallery'));
+
+        return view('admin.galleries.edit', compact('gallery'));
     }
 
     /**
@@ -82,7 +83,7 @@ class GalleryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $gallery = $this->dispatchFrom('KP\Commands\Gallery\CreateGalleryCommand', $request);
+        $gallery = $this->dispatchFrom('KP\Commands\Gallery\UpdateGalleryCommand', $request);
 
         return redirect()->to('/admin/gallery/' . $gallery->id .'/edit');
     }
@@ -96,5 +97,14 @@ class GalleryController extends Controller
     public function destroy($id)
     {
         return Gallery::delete($id);
+    }
+
+    public function destroyImage(Request $request, GalleryRepo $gallery_repo)
+    {
+        $image_id = $request->input('image_id');
+
+        $delete = $gallery_repo->removeImage($image_id);
+
+        return json_encode('true');
     }
 }

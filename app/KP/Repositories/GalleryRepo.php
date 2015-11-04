@@ -2,6 +2,7 @@
 
 namespace KP\Repositories;
 
+use KP\Models\FeaturedImage;
 use KP\Models\Gallery;
 
 class GalleryRepo
@@ -21,11 +22,26 @@ class GalleryRepo
 
     public function getById($id)
     {
-        return Gallery::where('id', $id);
+        return Gallery::where('id', $id)->first();
     } 
 
     public function getBySlug($slug)
     {
-        return Gallery::where('slug', $slug);
+        return Gallery::where('slug', $slug)->first();
     } 
+
+    public function getMediaForId($id)
+    {
+        $album = $this->getById($id);
+        
+        return $album->getMedia();
+    }
+
+    public function removeImage($id)
+    {
+        $image = FeaturedImage::find($id);
+        $image->delete();
+
+        return true;
+    }
 }

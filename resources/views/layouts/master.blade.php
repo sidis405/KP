@@ -97,7 +97,7 @@
                   <li><a {{ checkActivePath('our_philosophy')}} href="our_philosophy.html">Our Philosophy</a></li>
                   <li><a {{ checkActivePath('collection')}} href="collection.html">Collection</a></li>
                   <li><a {{ checkActivePath('gallery')}} href="gallery.html">Gallery</a></li>
-                  <li><a {{ checkActivePath('press')}} href="press.html">Press</a></li>
+                  <li><a {{ checkActivePath('press')}} href="press">Press</a></li>
                   <li><a class="last-nav {{ checkActivePath('contact', true)}}" href="contact.html">Contact</a></li>                  
                 </ul>
               </div><!-- /.navbar-collapse -->

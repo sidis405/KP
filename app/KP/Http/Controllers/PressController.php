@@ -17,24 +17,16 @@ class PressController extends Controller
      */
     public function index(PressRepo $press_repo)
     {
-        $press = $press_repo->getAll();
+        $press = $press_repo->getAllFront();
 
-        return view('press.index', compact('press'));
+        // return $press;
+        
+        \Session::put('path', 'press');
+        $title = prepTitle('press', 'Kastner &amp; Pallavicino');
+
+        return view('press.index', compact('press', 'title'));
 
     }
 
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id, PressRepo $press_repo)
-    {
-        $press = $press_repo->getById($id);
-
-        return view('press.show', compact('press'));
-    }
 
 }

@@ -28,10 +28,18 @@ class PressRepo
         return Press::all();
     } 
 
+    public function getAllFront()
+    {
+        return Press::with('coverImage')->where('cover_image_id', '>', 0)->get();
+    } 
+
     public function getById($id)
     {
         return Press::where('id', $id)->first();
     } 
+
+
+
 
     public function getBySlug($slug)
     {

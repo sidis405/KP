@@ -2,7 +2,11 @@
 
 Route::get('/', 'StaticController@index');
 
+
+Route::get('press.html', '\KP\Http\Controllers\PressController@index');
+
 Route::get('{param}.html', 'StaticController@catch_all');
+
 
 // Route::get('index.html', 'StaticController@index');
 // Route::get('collection.html', 'StaticController@collection');

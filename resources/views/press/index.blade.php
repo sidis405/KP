@@ -10,7 +10,7 @@
 
           <div class="col-md-3 col-sm-6">
             <a target="_blank" href="{{$item->path}}" class="thumbnail">
-              <img src="/image/{{$item->coverImage->id}}/{{$item->coverImage->file_name}}" alt="">
+              <img src="/image/{{$item->coverImage->id}}/{{$item->coverImage->file_name}}?w=200&h=190&fit=crop" alt="">
              </a>
           </div>
 

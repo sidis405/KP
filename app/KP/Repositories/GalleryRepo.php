@@ -30,7 +30,7 @@ class GalleryRepo
 
     public function getAllFront()
     {
-        return Gallery::with('coverImage', 'featuredImage')->get();
+        return Gallery::with('coverImage', 'featuredImage')->orderBy('created_at', 'DESC')->get();
     } 
 
     public function getById($id)

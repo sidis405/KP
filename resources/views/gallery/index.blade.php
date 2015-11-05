@@ -4,16 +4,22 @@
 @section('content')
 
 
-
+        <div id="load-more-galleries-url" style="display:none">{{formatLoadMoreUrl($gallery->nextPageUrl())}}</div>
        <div class="row row-gallery">
-       @foreach($gallery as $item)
-         <div class="col-md-4 col-sm-6">
-          <a href="/image/{{$item->featuredImage->id}}/{{$item->featuredImage->file_name}}" class="thumbnail">
-            <img src="/image/{{$item->coverImage->id}}/{{$item->coverImage->file_name}}" alt="...">
-          </a>
-         </div>
-        @endforeach
+       
+       @include('gallery.gallery-partial')
 
        </div> <!-- end of gallery -->
 
+
+        @if($gallery->hasMorePages())
+        <!-- <span class="load-more-activities load-more-section">Visualizza di più</span> -->
+
+    
+        <div class="col-xs-12 remove">
+          <!-- load more -->         
+          <div class="btn btn-primary load-more load-more-galleries">Load More</div> 
+         </div> 
+
+        @endif
 @stop

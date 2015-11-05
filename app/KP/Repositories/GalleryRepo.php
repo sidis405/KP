@@ -28,9 +28,9 @@ class GalleryRepo
         return Gallery::all();
     } 
 
-    public function getAllFront()
+    public function getAllFront($howMany = 9)
     {
-        return Gallery::with('coverImage', 'featuredImage')->orderBy('created_at', 'DESC')->get();
+        return Gallery::with('coverImage', 'featuredImage')->latest()->simplePaginate($howMany);;
     } 
 
     public function getById($id)

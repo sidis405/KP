@@ -25,3 +25,7 @@ function prepTitle($string, $base)
     return $base;
 }
 
+function formatLoadMoreUrl($input)
+{
+    return str_replace('/?', '/loadMoreGalleries?', $input);
+}

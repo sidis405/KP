@@ -26,5 +26,16 @@ class GalleryController extends Controller
 
     }
 
+    public function loadMore(GalleryRepo $gallery_repo)
+    {
+        $gallery = $gallery_repo->getAllFront(9);
+
+        return [
+            'layout' => view('gallery.gallery-partial', compact('gallery'))->render(), 
+            'url' => str_replace('/?', '?', $gallery->nextPageUrl()),
+            'more' => $gallery->hasMorePages()
+            ];
+    }
+
 
 }

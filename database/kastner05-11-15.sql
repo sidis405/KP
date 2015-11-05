@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.34)
 # Database: kastner
-# Generation Time: 2015-11-04 18:25:16 +0000
+# Generation Time: 2015-11-05 12:07:34 +0000
 # ************************************************************
 
 
@@ -256,7 +256,7 @@ LOCK TABLES `users` WRITE;
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`)
 VALUES
-	(1,'KP Admin','info@kastner-pallavicino.com','$2y$10$iE11Pc.uf4tN2uMHf9xZaeVS1vzmHI5aaUbN0Zr1T3iV3Lk4o3RWC','jOVx7Qd1oclbZXNMZM8NC2WlH3FwtSQvQGhjarqnNsqVzTiRbuv04wkUr4sj','2015-11-04 13:19:54','2015-11-04 13:28:42');
+	(1,'KP Admin','info@kastner-pallavicino.com','$2y$10$iE11Pc.uf4tN2uMHf9xZaeVS1vzmHI5aaUbN0Zr1T3iV3Lk4o3RWC','lTxcp5l2EeECKXl6NonqMLjgRBSH86bpxzDGfHYZ1CLoolOu3j9MkfesAxSf','2015-11-04 13:19:54','2015-11-04 18:30:39');
 
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;

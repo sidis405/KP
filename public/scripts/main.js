@@ -7,12 +7,12 @@ $('.row-gallery .thumbnail').magnificPopup({
 });
 
 
-// load more btn
-$('.load-more').on('click', function() {
-	$('.load-more-section').fadeIn(600);
-  $('.remove').removeClass('col-xs-12');
-	$(this).hide();
-});
+// // load more btn
+// $('.load-more').on('click', function() {
+// 	$('.load-more-section').fadeIn(600);
+//   $('.remove').removeClass('col-xs-12');
+// 	$(this).hide();
+// });
 
 $('video').mouseenter(function(event) {
   $(this).get(0).play()
@@ -147,3 +147,49 @@ $(document).ready(function(){
   });
 });
 
+$(document).on('click', '.load-more-galleries', function(){
+
+  var url = $(document).find('#load-more-galleries-url').text();
+  getGalleries(url);
+
+});
+
+function getGalleries (url) {
+
+    var last_gallery = $('.single-gallery').last();
+    var navbar_height = parseInt($('.navbar').css('height').replace('px', ''));
+
+    // console.log(last_gallery);
+
+    $.ajax({
+        url: url,
+        type: 'GET',
+        success: function(data) {
+
+            $(data.layout).appendTo('.row-gallery').hide().fadeIn(600);
+            // $('.row-gallery').append(data.layout).fadeIn(600);
+            // $('.hidden-galleries').append(data.galleries);
+            $(document).find('#load-more-galleries-url').text(data.url);
+
+            var next_activity = $(last_gallery).next();
+
+            // animate_scroll(next_activity, navbar_height, 25);
+
+            if(data.more == false)
+            {
+              $('.load-more-galleries').hide();
+            }
+
+            return false;
+        },
+        error: function(XMLHttpRequest, textstatus, error) {
+
+            return false;
+
+        }
+    });
+
+    return false;
+
+
+}

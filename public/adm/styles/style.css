@@ -20,7 +20,7 @@ section.main {
   padding: 0 0 0 230px;
   -webkit-transition: 0.35s;
           transition: 0.35s;
-  margin: 50px auto;
+  margin: 10px auto 40px auto;
 }
 section.main h1 {
   font-weight: 300;
@@ -780,6 +780,9 @@ aside.sidebar .top-sidebar {
 aside.sidebar .top-sidebar .avatar {
   width: 230px;
   height: 150px;
+  text-align: center;
+  margin: 30px auto;
+  transform: scale(0.9);
 }
 aside.sidebar ul.sidebar-menu {
   list-style: none;
@@ -854,6 +857,31 @@ aside.sidebar ul.sidebar-menu li a:focus {
   -webkit-transition: 0.55s;
           transition: 0.55s;
 }
+
+.upload-material {
+  position: relative;
+  overflow: hidden;
+}
+.upload-material input {
+  opacity: 0;
+  font-size: 40px;
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  z-index: 9999;
+}
+.upload-material span {
+  background: #638f94;
+  padding: 10px;
+  cursor: pointer;
+  display: block;
+  width: 100px;
+  text-align: center;
+  color: #fff;
+}
+
 .thumbnail-preview-list {
   background: url(http://placehold.it/120x120) no-repeat center center;
   width: 120px;

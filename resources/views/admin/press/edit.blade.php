@@ -53,9 +53,10 @@
                     <br>
                     <br>
 
-                      <div class="form-group">
-                          <div class="input-material">
-                            <label for="" class="label-material">Or upload an attachment</label>
+                      <div class="form-group">                          
+                          <label for="" class="label-material">Or upload an attachment</label>
+                          <div class="upload-material">
+                            <span>Upload file</span>
                             <input type="file" name="attachment" >
                           </div>
                         </div>

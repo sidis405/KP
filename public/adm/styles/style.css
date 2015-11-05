@@ -4,6 +4,9 @@ body {
   height: 100%;
 }
 
+.dropzone .btn-primary {
+  background: #000;
+}
 .admin-container .avatar {
     text-align: center;
     margin-bottom: 35px;
@@ -678,7 +681,7 @@ section.main .container {
   font-size: 18px;
 }
 .btn.btn-main {
-  background: #638f94 !important;
+  background: #000 !important;
 }
 .btn.btn-red {
   background: #F44336 !important;
@@ -768,7 +771,7 @@ aside.sidebar {
   height: 100%;
   width: 230px;
   top: 0;
-  background: #638f94;
+  background: #000;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   -webkit-transition: 0.35s;
           transition: 0.35s;
@@ -806,11 +809,11 @@ aside.sidebar ul.sidebar-menu li a i {
   width: 20px;
 }
 aside.sidebar ul.sidebar-menu li a:hover {
-  background: #598085;
+  background: #efefef;
   -webkit-transition: 0.25s;
           transition: 0.25s;
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 aside.sidebar ul.sidebar-menu li a:focus {
   text-decoration: none;
@@ -839,7 +842,7 @@ aside.sidebar ul.sidebar-menu li a:focus {
   width: 100%;
   content: '';
   height: 3px;
-  background: #638f94;
+  background: #000;
   -webkit-transition: 0.55s;
           transition: 0.55s;
 }
@@ -858,9 +861,27 @@ aside.sidebar ul.sidebar-menu li a:focus {
           transition: 0.55s;
 }
 
+.uploadfile-label {
+  display: block;
+}
+
+#filename , #remove-attachment{
+  margin-left: 25px;
+  float: left;
+  margin-top: -30px;
+   
+}
+
+#remove-attachment{
+  display: none;
+  float: right;
+  font-size: 20px;
+}
+
 .upload-material {
   position: relative;
   overflow: hidden;
+  display: inline-block;
 }
 .upload-material input {
   opacity: 0;
@@ -873,7 +894,7 @@ aside.sidebar ul.sidebar-menu li a:focus {
   z-index: 9999;
 }
 .upload-material span {
-  background: #638f94;
+  background: #000;
   padding: 10px;
   cursor: pointer;
   display: block;
@@ -906,7 +927,7 @@ aside.sidebar ul.sidebar-menu li a:focus {
   opacity: 0;
   -webkit-transition: 0.35s;
           transition: 0.35s;
-  background: #638f94;
+  background: #000;
   padding: 8px;
   color: #fff;
   border-radius: 5px;
@@ -926,13 +947,13 @@ table.table {
   margin: 0;
 }
 .table-striped > tbody > tr:nth-of-type(odd) {
-  background: #638f94;
+  background: #000;
 }
 .table-hover > tbody > tr {
   cursor: pointer;
 }
 .table-hover > tbody > tr:hover {
-  background: #638f94;
+  background: #efefef;
 }
 table.table tbody tr td {
   padding: 10px;

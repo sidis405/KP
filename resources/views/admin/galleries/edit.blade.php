@@ -20,7 +20,7 @@
         <h2>In this section you may edit a gallery item.</h2>
         <div class="actions"><a href="/admin/gallery/create">
             <div class="btn btn-green btn-circle"><i class="fa fa-plus"></i></div></a><span>Add another item     </span></div>
-        <div class="card tables-card">
+        
 
         @include('layouts.errors')
         @include('flash::message')
@@ -35,7 +35,7 @@
               <div class="card-body">
                   <div class="row">
                     <div class="col-md-6 centered">
-                      <h3>Cover Image</h3>
+                      <h3>Cover Image (300x300px)</h3>
                         <div class="form-group">
                           <a id="cover_image_preview">
                               <div class="thumbnail-preview-add thumbnail-preview-add-cover" @if($gallery->cover_image_id > 0) style="background: url('/image/{{$gallery->coverImage->id}}/{{$gallery->coverImage->file_name}}?w=280&h=280&fit=crop') no-repeat center center;" @endif >
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 centered">
-                      <h3>Main Image</h3>
+                      <h3>Main Image (suggested: 1200px width)</h3>
                         <div class="form-group">
                           <a id="featured_image_preview">
                               <div class="thumbnail-preview-add thumbnail-preview-add-featured" @if($gallery->featured_image_id > 0) style="background: url('/image/{{$gallery->featuredImage->id}}/{{$gallery->featuredImage->file_name}}?w=280&h=280&fit=crop') no-repeat center center;" @endif >
@@ -68,7 +68,7 @@
               <button id="toolbar-save-form" class="btn btn-green">Save</button>
               <a href="/admin/progetti" class="btn btn-orange">Reset</a>
             </div>
-        </div>
+        
 
       </div>
 

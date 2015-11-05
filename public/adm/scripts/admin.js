@@ -181,4 +181,23 @@ $('#album_deletion_form').submit(function() {
     var c = confirm("Are you sure you permanentely want to remove this item?");
     return c; 
 });
+$('#attachment').change(function(){
+
+    $('#filename').text($(this).val().replace("C:\\fakepath\\", ""));
+    $('#filename-label').css('background', '#4CAF50');
+    $('#remove-attachment').show();
+
+});
+
+$('#remove-attachment').click(function(){
+
+    $('#attachment').val('');
+    $('#filename').text('');
+    $('#filename-label').css('background', '#000');
+    $(this).hide();
+
+});
+
+
+
 

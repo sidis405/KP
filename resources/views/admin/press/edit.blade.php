@@ -31,7 +31,7 @@
               <div class="card-body">
                   <div class="row">
                     <div class="col-md-4 centered">
-                      <h3>Cover Image</h3>
+                      <h3>Cover Image (332x306px)</h3>
                         <div class="form-group">
                           <a id="cover_image_preview">
                               <div class="thumbnail-preview-add thumbnail-preview-add-cover" @if($press->cover_image_id > 0) style="background: url('/image/{{$press->coverImage->id}}/{{$press->coverImage->file_name}}?w=280&h=280&fit=crop') no-repeat center center;" @endif >
@@ -53,11 +53,12 @@
                     <br>
 
                       <div class="form-group">                          
-                          <label for="" class="label-material">Or upload an attachment</label>
+                          <label for="" class="label-material uploadfile-label">Or upload an attachment</label>
                           <div class="upload-material">
-                            <span>Upload file</span>
-                            <input type="file" name="attachment" >
+                            <span id="filename-label">Upload file</span>
+                            <input type="file" name="attachment" id="attachment">                            
                           </div>
+                          <div style="display: inline-block;"><span id="filename"> </span><i class="fa fa-times-circle" id="remove-attachment"></i></div>
                         </div>
                     </div>
                   </div>

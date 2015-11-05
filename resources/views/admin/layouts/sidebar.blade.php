@@ -1,7 +1,7 @@
 <aside class="sidebar">
     <div class="top-sidebar">
         <a href="/">
-            <div class="avatar"><img src="/adm/img/logo-admin.png"></div>
+            <div class="avatar"><img src="/adm/img/logo-admin-sidebar.png"></div>
         </a>
     </div>
     <ul class="sidebar-menu">

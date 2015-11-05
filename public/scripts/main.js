@@ -128,8 +128,8 @@ if (sessionStorage.getItem('advertOnce') !== 'true') {
         sessionStorage.setItem('advertOnce','true');
       }, 2000);      
    });
-}else{
-  $('#newsletter').hide();
+ }else{
+   $('#newsletter').hide();
 }
    
 

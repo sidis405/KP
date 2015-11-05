@@ -30,7 +30,11 @@ class GalleryRepo
 
     public function getAllFront($howMany = 9)
     {
+<<<<<<< Updated upstream
         return Gallery::with('coverImage', 'featuredImage')->latest()->simplePaginate($howMany);;
+=======
+        return Gallery::with('coverImage', 'featuredImage')->where('featured_image_id', '>', 0)->where('cover_image_id', '>', 0)->orderBy('created_at', 'DESC')->get();
+>>>>>>> Stashed changes
     } 
 
     public function getById($id)

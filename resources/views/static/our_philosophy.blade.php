@@ -36,7 +36,7 @@
                   <p>Virginia Cosentini Pallavicino was born in Rome in 1990. Raised within an artistic environment, she developed an intense connection with the aesthetics.</p>
                 </div>
             </div>
-            <p class="blitz">Virginia Cosentini Pallavicino was born in Rome in 1990. Raised within an artistic environment, she developed an intense connection with aesthetics. She was raised in Rome, London and Gstaad, and thanks to the diversity of the cultures she encountered, she decided to study Philosophy to deepen her passion for Knowledge. Thus, it is not a coincidence that she decided to give each model of the bodies the name of a famous philosopher. Philosophers focus on the mind, and the bodies are a product of it. Along with her studies in photography, she also worked for a fashion P.R firm in Rome. Virginia has grown her determination to set her own footprints in the fashion business. 
+            <p class="blitz">Virginia Cosentini Pallavicino, was born in Rome and raised within an artistic environment, where she developed an intense connection with aesthetics. Growing up between Rome, London and Switzerland, she was exposed to many diverse cultures, and went on to study philosophy to deepen her passion for knowledge. Thus, it is not a coincidence that each model of the bodies is named after an inspirational philosopher. Philosophers focus on the mind, and the bodies are a product of it. Along with her studies in photography, she also worked for a fashion P.R firm in Rome. Virginia has grown her determination to set her own footprints in the fashion business.  
             </p>            
           </div>
           <div class="col-md-6">

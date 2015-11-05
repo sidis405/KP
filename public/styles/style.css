@@ -1,9 +1,29 @@
+::-webkit-input-placeholder {
+   text-transform: uppercase;
+   font-family: 'Quicksand' !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-transform: uppercase;
+   font-family: 'Quicksand' !important; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-transform: uppercase;
+   font-family: 'Quicksand' !important;  
+}
+
+:-ms-input-placeholder {  
+   text-transform: uppercase;
+   font-family: 'Quicksand' !important; 
+}
+
 /* MailChimp Form Embed Code - Slim - 08/17/2011 */
 #mc_embed_signup form {
   display: block;
   position: relative;
-  text-align: left;
-  padding: 10px 0 10px 3%;
+  text-align: center;
+   padding: 20px;
 }
 #mc_embed_signup h2 {
   font-weight: bold;
@@ -11,9 +31,13 @@
   margin: 15px 0;
   font-size: 1.4em;
 }
-#mc_embed_signup input {
-  border: 1px solid #999;
+#mc_embed_signup input {  
   -webkit-appearance: none;
+  border: 0;
+  width: 90%;
+  margin: 10px auto;
+  background: #efefef;
+  padding: 15px;
 }
 #mc_embed_signup input[type=checkbox] {
   -webkit-appearance: checkbox;
@@ -26,18 +50,18 @@
 }
 #mc_embed_signup .button {
   clear: both;
-  background-color: #aaa;
-  border: 0 none;
-  border-radius: 4px;
+  background: transparent;
+  border: 1px solid #efefef;  
   color: #FFFFFF;
+  text-transform: uppercase;
   cursor: pointer;
   display: inline-block;
   font-size: 15px;
   font-weight: bold;
-  height: 32px;
+  height: auto;
   line-height: 32px;
-  margin: 0 5px 10px 0;
-  padding: 0;
+  margin: 0 auto 30px auto;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   vertical-align: top;
@@ -58,24 +82,14 @@
   display: inline;
 }
 #mc_embed_signup label {
-  display: block;
+  display: none;
   font-size: 16px;
   padding-bottom: 10px;
   font-weight: bold;
 }
-#mc_embed_signup input.email {
-  display: block;
-  padding: 8px 0;
-  margin: 0 4% 10px 0;
-  text-indent: 5px;
-  width: 58%;
-  min-width: 130px;
-}
+
 #mc_embed_signup input.button {
-  display: block;
-  width: 35%;
-  margin: 0 0 10px 0;
-  min-width: 90px;
+  margin: auto;
 }
 #mc_embed_signup div#mce-responses {
   float: left;
@@ -139,16 +153,14 @@
   opacity: 0;
 }
 body {
-  font-family: 'Muli';
-  font-weight: 300;
+  font-family: 'Quicksand';
+  font-weight: 400;
   overflow-x: hidden!important;
 }
 body p {
   font-size: 14px !important;
 }
-#newsletter img {
-  margin: 20px auto 40px auto;
-}
+
 #mc_embed_signup {
   background: #fff;
   clear: left;
@@ -162,11 +174,12 @@ body p {
 }
 #mc_embed_signup .button {
   background: transparent;
-  border: 1px solid #000;
-  color: #000;
+  border: 1px solid #8e8e8e;
+  color: #8e8e8e;
+  padding: 10px 50px;
   border-radius: 0;
   margin-top: 20px !important;
-  margin-bottom: 0 !important;
+  margin-bottom: 30px !important;
 }
 #mc_embed_signup .button:hover {
   background: #000;
@@ -248,7 +261,7 @@ header .logo {
 header .navbar {
   background: transparent;
   border: 0;
-  font-family: 'Muli';
+  font-family: 'Quicksand';
   font-weight: 400;
 }
 header .navbar .navbar-nav {
@@ -522,6 +535,33 @@ video {
   max-width: 500px;
   margin: 20px auto;
 }
+.white-popup-newsletter {
+  max-width: 1000px;
+  padding: 0;
+  text-align: center;
+}
+.white-popup-newsletter p {
+  font-size: 18px !important;
+  color:#8e8e8e;
+  padding: 0 50px;
+}
+
+.logo-newsletter {
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.white-popup-newsletter h4 {
+  font-size: 20px;
+  color: #8e8e8e;
+  margin: 35px 20px;
+  font-weight: 100;
+}
+
+.white-popup-newsletter .col-sm-6 {
+  padding: 0;
+}
+
 .white-popup p {
   font-size: 16px;
 }
@@ -859,6 +899,21 @@ video {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .white-popup-newsletter h4 {
+    font-size: 16px;
+    color: #8e8e8e;
+    margin: 15px;
+    font-weight: 100;
+  }
+  #mc_embed_signup form {
+    padding: 10px;
+  }
+  .white-popup-newsletter p {
+    font-size: 16px !important;
+  }
+  #mc_embed_signup .button {
+    margin: 10px auto !important;
+  }
   .row-concept .col-md-4 {
     padding-left: 15px;
   }
@@ -868,6 +923,9 @@ video {
   }
   .row-concept .col-md-8 {
     padding-right: 15px;
+  }
+  .row-about .about-box-container {
+    margin-top: 40px;
   }
   .row-mind {
     margin: 100px 10%;
@@ -908,6 +966,27 @@ video {
   }
 }
 @media screen and (max-width: 767px) {
+  .white-popup-newsletter {
+    padding-bottom: 30px;
+  }
+  .white-popup-newsletter h4 {
+    font-size: 16px;
+    color: #8e8e8e;
+    margin: 15px;
+    font-weight: 100;
+  }
+  #mc_embed_signup form {
+    padding: 10px;
+  }
+  .white-popup-newsletter p {
+    font-size: 16px !important;
+  }
+  #mc_embed_signup .button {
+    margin: 10px auto !important;
+  }
+  .newsletter-bg {
+    display: none;
+  }
   header .navbar-toggle {
     float: right;
     margin-right: 8px;
@@ -919,6 +998,9 @@ video {
   .row-mind {
     margin: 100px 10px;
     text-align: center;
+  }
+  .row-about {
+    margin-top: 40px;
   }
   .row-mind p {
     text-align: justify;
@@ -935,7 +1017,8 @@ video {
     display: block !important;
   }
   .row-concept .concept-bg {
-    height: 600px;
+    height: auto;
+    margin-bottom: 30px;
   }
   .row-concept .concept-bg p {
     padding: 0 50px;

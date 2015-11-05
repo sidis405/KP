@@ -4,3 +4,4 @@ Homestead.yaml
 Homestead.json
 .env
 public/img/.DS_Store
+database/.DS_Store

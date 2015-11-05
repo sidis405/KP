@@ -42,14 +42,13 @@
                     </div>
                     <div class="col-md-8">
                       <h3>Url address of the press item</h3>
-                      <div class="input-material">
-                      @if(strlen($press->path))
-                            <a href="{{$press->path}}" target="_blank"><i class="fa fa-external-link"></i></a>
-                      @endif
+                      <div class="input-material">                      
                         <label for="" class="label-material"></label>
                         <input type="text" name="path" value="{{ old('name', $press->path) }}" placeholder="example: http://www.example.com/KP" class="input-field-material" required title="This field is obligatory." x-moz-errormessage="This field is obligatory.">
                       </div>
-
+                      @if(strlen($press->path))
+                            <a class="press-path" href="{{$press->path}}" target="_blank"><i class="fa fa-external-link"></i><span>View external link</span></a>
+                      @endif
                     <br>
                     <br>
 

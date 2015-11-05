@@ -822,7 +822,7 @@ aside.sidebar ul.sidebar-menu li a:focus {
   position: relative;
   width: 100%;
   overflow: hidden;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 20px auto;
 }
 .input-material:before {
   position: absolute;
@@ -945,6 +945,11 @@ table.table thead th {
 }
 table.table thead th:first-child {
   padding-left: 20px;
+}
+.press-path i {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 1199px) {
   aside.sidebar {

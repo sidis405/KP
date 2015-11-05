@@ -16,7 +16,7 @@
         <!-- <span class="load-more-activities load-more-section">Visualizza di più</span> -->
 
     
-        <div class="col-xs-12 remove">
+        <div class="remove">
           <!-- load more -->         
           <div class="btn btn-primary load-more load-more-galleries">Load More</div> 
          </div> 

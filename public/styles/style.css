@@ -18,6 +18,13 @@
    font-family: 'Quicksand' !important; 
 }
 
+#mce-responses {
+  text-align: center !important;
+  font-size: 12px;
+}
+#mc_embed_signup div.response {
+  width: 100% !important;
+}
 /* MailChimp Form Embed Code - Slim - 08/17/2011 */
 #mc_embed_signup form {
   display: block;

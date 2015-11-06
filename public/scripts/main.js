@@ -121,9 +121,9 @@ $(function() {
 window.setInterval(function(){
   
   checkTimeOnSiteAndRunModal();
-  console.log('ran check time');
+  // console.log('ran check time');
 
-}, 10000);
+}, 60000);
 
 // console.log($.cookie('time_on_site'))
   
@@ -137,14 +137,11 @@ function checkTimeOnSiteAndRunModal(){
 
     var time_on_site = $.cookie('time_on_site');
     var time_now = Math.floor(new Date().getTime() / 1000);
-    console.log(time_now - time_on_site);
-    if( time_now - time_on_site > 120)
+    // console.log(time_now - time_on_site);
+    if( time_now - time_on_site > 1800)
     {
-      $.magnificPopup.open({
-        items: {src: '#newsletter'},
-        type: 'inline',
-        mainClass: 'mfp-fade'
-      }, 0);
+      triggerNewsLetter();
+      
       $.removeCookie('time_on_site');
       $.cookie('time_on_site', Math.floor(new Date().getTime() / 1000), { path: '/', expires: 365 });
     }
@@ -154,29 +151,29 @@ function checkTimeOnSiteAndRunModal(){
 }
 
 
+
+
 // console.log($.cookie('time_on_site'))
 
 // $.removeCookie('time_on_site');
 
-// function triggerNewsLetter(){
-//  console.log('show newsletter');
-// }
+function triggerNewsLetter(){
+ $.magnificPopup.open({
+   items: {src: '#newsletter'},
+   type: 'inline',
+   mainClass: 'mfp-fade'
+ }, 0);
+}
 
 
 if (sessionStorage.getItem('advertOnce') !== 'true') {
   $(window).load(function(){
       setTimeout(function() {
-        $.magnificPopup.open({
-          items: {src: '#newsletter'},
-          type: 'inline',
-          mainClass: 'mfp-fade'
-        }, 0);
+        triggerNewsLetter();
         sessionStorage.setItem('advertOnce','true');
       }, 2000);      
    });
- }else{
-   $('#newsletter').hide();
-}
+ }
    
 
 

@@ -30,7 +30,7 @@
   display: block;
   position: relative;
   text-align: center;
-   padding: 20px;
+   padding: 5px;
 }
 #mc_embed_signup h2 {
   font-weight: bold;
@@ -44,7 +44,7 @@
   width: 90%;
   margin: 10px auto;
   background: #efefef;
-  padding: 15px;
+  padding: 8px;
 }
 #mc_embed_signup input[type=checkbox] {
   -webkit-appearance: checkbox;
@@ -183,7 +183,7 @@ body p {
   background: transparent;
   border: 1px solid #8e8e8e;
   color: #8e8e8e;
-  padding: 10px 50px;
+  padding: 5px 50px;
   border-radius: 0;
   margin-top: 20px !important;
   margin-bottom: 30px !important;
@@ -543,25 +543,25 @@ video {
   margin: 20px auto;
 }
 .white-popup-newsletter {
-  max-width: 1000px;
+  max-width: 700px;
   padding: 0;
   text-align: center;
 }
 .white-popup-newsletter p {
-  font-size: 18px !important;
+  font-size: 14px !important;
   color:#8e8e8e;
   padding: 0 50px;
 }
 
 .logo-newsletter {
-  margin: 40px auto;
+  margin: 30px auto;
   padding: 0 20px;
 }
 
 .white-popup-newsletter h4 {
-  font-size: 20px;
+  font-size: 16px;
   color: #8e8e8e;
-  margin: 35px 20px;
+  margin: 15px 20px;
   font-weight: 100;
 }
 
@@ -600,7 +600,7 @@ video {
   display: none;
 }
 .row-mind {
-  margin: 140px 20%;
+  margin: 100px 20%;
   text-align: center;
 }
 .row-mind p {
@@ -659,6 +659,7 @@ video {
   width: 292px;
   padding: 0;
   margin: 20px auto;
+  text-align: left;
 }
 .row-about img {
   margin: 80px auto;

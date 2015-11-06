@@ -123,7 +123,7 @@ window.setInterval(function(){
   checkTimeOnSiteAndRunModal();
   // console.log('ran check time');
 
-// }, 10000);
+//}, 1000);
 }, 60000);
 
 // console.log($.cookie('time_on_site'))
@@ -139,7 +139,7 @@ function checkTimeOnSiteAndRunModal(){
     var time_on_site = $.cookie('time_on_site');
     var time_now = Math.floor(new Date().getTime() / 1000);
     // console.log(time_now - time_on_site);
-    // if( time_now - time_on_site > 60)
+    // if( time_now - time_on_site > 1)
     if( time_now - time_on_site > 1800)
     {
       triggerNewsLetter();
@@ -173,7 +173,7 @@ if (sessionStorage.getItem('advertOnce') !== 'true') {
       setTimeout(function() {
         triggerNewsLetter();
         sessionStorage.setItem('advertOnce','true');
-      }, 2000);      
+      }, 0);      
    });
  }else{
     $('#newsletter').addClass('mfp-hide');

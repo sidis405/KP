@@ -30,8 +30,7 @@
           <div class="col-md-6">
             <div class="about-box-container">
               <img src="img/virginia.jpg" alt="">
-                <div class="about-box">
-                  <h2>Fashion designer</h2>
+                <div class="about-box">                  
                   <h3>Virginia Cosentini Pallavicino</h3>
                   <p>Virginia Cosentini Pallavicino was born in Rome in 1990. Raised within an artistic environment, she developed an intense connection with the aesthetics.</p>
                 </div>
@@ -42,8 +41,7 @@
           <div class="col-md-6">
             <div class="about-box-container">
               <img src="img/helena.jpg" alt="">
-                <div class="about-box">
-                  <h2>Fashion designer</h2>
+                <div class="about-box">                  
                   <h3>Helena Kastner</h3>
                   <p>Helena Kastner was born in Frankfurt and raised between Austria, Switzerland and Germany.
                   From a young age she was always inspired by the natural sofistication and elegance of objects and places that she encountered.</p>

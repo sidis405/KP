@@ -172,7 +172,7 @@
           <img class="img-responsive newsletter-bg" src="img/newsletter-img.jpg" alt="">
         </div>
         <div class="col-sm-6">
-          <img class="img-responsive logo-newsletter" src="img/logo-newsletter.png" alt="">
+          <img class="img-responsive logo-newsletter" src="img/logo-newsletter.svg" alt="">
           <h4>To find out more about the newest arrivals and exclusive events from Kastner&amp;Pallavicino, sign up here.</h4>
           <!-- Begin MailChimp Signup Form -->        
             

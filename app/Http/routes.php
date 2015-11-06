@@ -124,7 +124,7 @@ Route::group(array('prefix' => 'admin', 'middleware' => 'auth'), function () {
 
     #   Press ROUTES
 
-    Route::post('carousel/ordina', '\Rutorika\Sortable\SortableController@sort');
+    Route::post('order', '\Rutorika\Sortable\SortableController@sort');
 
     Route::get('carousel', [
         'as'    => 'admin_carousel',

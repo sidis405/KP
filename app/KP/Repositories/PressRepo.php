@@ -25,12 +25,12 @@ class PressRepo
 
     public function getAll()
     {
-        return Press::all();
+        return Press::orderBy('position', 'ASC')->get();
     } 
 
     public function getAllFront()
     {
-        return Press::with('coverImage')->where('cover_image_id', '>', 0)->get();
+        return Press::with('coverImage')->where('cover_image_id', '>', 0)->orderBy('position', 'ASC')->get();
     } 
 
     public function getById($id)

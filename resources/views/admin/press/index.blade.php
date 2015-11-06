@@ -1,5 +1,12 @@
 @extends('admin.layouts.master')
 
+@section('header_extras')
+
+<link rel="stylesheet" type="text/css" href="/styles/jquery-ui.css">
+<meta name="_token" content="{{ csrf_token() }}" />
+
+@stop
+
 @section('content')
 
  @include('layouts.errors')
@@ -19,15 +26,17 @@
             <table class="table table-responsive table-hover">
               <thead>
                 <tr>
+                <td>&nbsp;</td>
                   <th>Cover image</th>
                   <th>Url</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody class="sortable" data-entityname="press">
               @foreach($press as $item)
-                <tr href="/admin/press/{{$item->id}}/edit">
+                <tr  data-itemId="{{{ $item->id }}}">
+                <td class="sortable-handle"><span class="glyphicon glyphicon-sort"></span></td>
                   <td>
-                    <div class="thumbnail-preview-list" @if($item->cover_image_id > 0) style="background: url('/image/{{$item->coverImage->id}}/{{$item->coverImage->file_name}}?w=120&h=120&fit=crop') no-repeat center center;" @endif ></div>
+                    <a href="/admin/press/{{$item->id}}/edit"><div class="thumbnail-preview-list" @if($item->cover_image_id > 0) style="background: url('/image/{{$item->coverImage->id}}/{{$item->coverImage->file_name}}?w=120&h=120&fit=crop') no-repeat center center;" @endif ></div></a>
                   </td>
                   <td>
                     <a href="{{$item->path}}" target="_blank">{{$item->path}}</a>
@@ -42,3 +51,10 @@
     </section>
 
   @stop
+
+  @section('footer_extras')
+
+<script type="text/javascript" src="/scripts/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/adm/scripts/sortable-bindings.js"></script>
+
+@stop

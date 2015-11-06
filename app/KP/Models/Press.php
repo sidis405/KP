@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 use Laracasts\Presenter\PresentableTrait;
 use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 use Spatie\MediaLibrary\HasMedia\Interfaces\HasMedia;
-
+use \Rutorika\Sortable\SortableTrait;
 
 class Press extends Model implements HasMedia
 {
-    use PresentableTrait, HasMediaTrait;
+    use PresentableTrait, HasMediaTrait, SortableTrait;
 
     protected $presenter = 'KP\Presenters\PressPresenter';
     protected $table = 'press';

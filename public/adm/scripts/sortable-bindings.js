@@ -19,7 +19,7 @@
         // console.log(requestData);
 
         $.ajax({
-            'url': '/admin/carousel/ordina',
+            'url': '/admin/order',
             'type': 'POST',
             'data': requestData,
             'success': function(data) {

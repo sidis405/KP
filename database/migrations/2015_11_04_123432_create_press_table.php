@@ -15,6 +15,7 @@ class CreatePressTable extends Migration
         Schema::create('press', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('cover_image_id');
+            $table->integer('postition')->nullable();
             $table->string('path');
             $table->timestamps();
         });

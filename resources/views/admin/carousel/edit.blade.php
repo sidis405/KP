@@ -34,7 +34,7 @@
                       <h3>Cover Image (1170x420px)</h3>
                         <div class="form-group"><div id="isCarousel" data-value="true"></div>
                           <a id="cover_image_preview">
-                              <div class="thumbnail-preview-add thumbnail-preview-add-cover thumbnail-preview-add-cover-carousel" @if($carousel->cover_image_id > 0) style="background: url('/image/{{$carousel->coverImage->id}}/{{$carousel->coverImage->file_name}}?w=1170&h=420&fit=crop') no-repeat center center;" @endif >
+                              <div class="thumbnail-preview-add thumbnail-preview-add-cover thumbnail-preview-add-cover-carousel" @if($carousel->cover_image_id > 0) style="background: url('/uploads/{{$carousel->coverImage->id}}/{{$carousel->coverImage->file_name}}?w=1170&h=420&fit=crop') no-repeat center center;" @endif >
                                 <div class="btn">Choose a cover image</div>
                               </div>
                           </a>

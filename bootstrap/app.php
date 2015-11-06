@@ -11,8 +11,12 @@
 |
 */
 
-$app = new Illuminate\Foundation\Application(
-    realpath(__DIR__.'/../')
+// $app = new Illuminate\Foundation\Application(
+//     realpath(__DIR__.'/../')
+// );
+
+$app = new KP\KPApplication(
+	realpath(__DIR__.'/../')
 );
 
 /*

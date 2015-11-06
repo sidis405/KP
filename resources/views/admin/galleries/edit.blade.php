@@ -38,7 +38,7 @@
                       <h3>Cover Image (300x300px)</h3>
                         <div class="form-group">
                           <a id="cover_image_preview">
-                              <div class="thumbnail-preview-add thumbnail-preview-add-cover" @if($gallery->cover_image_id > 0) style="background: url('/image/{{$gallery->coverImage->id}}/{{$gallery->coverImage->file_name}}?w=280&h=280&fit=crop') no-repeat center center;" @endif >
+                              <div class="thumbnail-preview-add thumbnail-preview-add-cover" @if($gallery->cover_image_id > 0) style="background-size: contain!important; background: url('/uploads/{{$gallery->coverImage->id}}/{{$gallery->coverImage->file_name}}?w=280&h=280&fit=crop') no-repeat center center;" @endif >
                                 <div class="btn">Choose cover image</div>
                               </div>
                           </a>
@@ -48,7 +48,7 @@
                       <h3>Main Image (suggested: 1200px width)</h3>
                         <div class="form-group">
                           <a id="featured_image_preview">
-                              <div class="thumbnail-preview-add thumbnail-preview-add-featured" @if($gallery->featured_image_id > 0) style="background: url('/image/{{$gallery->featuredImage->id}}/{{$gallery->featuredImage->file_name}}?w=280&h=280&fit=crop') no-repeat center center;" @endif >
+                              <div class="thumbnail-preview-add thumbnail-preview-add-featured" @if($gallery->featured_image_id > 0) style="background-size: contain!important; background: url('/uploads/{{$gallery->featuredImage->id}}/{{$gallery->featuredImage->file_name}}?w=280&h=280&fit=crop') no-repeat center center;" @endif >
                                 <div class="btn">Chooose main image</div>
                               </div>
                           </a>

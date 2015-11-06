@@ -16,7 +16,7 @@ class StaticController extends Controller
             $title = prepTitle($param, 'Kastner &amp; Pallavicino');
             return view('static.' . $param, compact('title'));
         }
-        return $param;
+        // return $param;
         abort(404);
     }
 

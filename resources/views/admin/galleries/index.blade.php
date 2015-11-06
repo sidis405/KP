@@ -25,12 +25,12 @@
               </thead>
               <tbody>
               @foreach($gallery as $item)
-                <tr href="/admin/gallery/{{$item->id}}/edit">
+                <tr >
                   <td>
-                    <div class="thumbnail-preview-list" @if($item->cover_image_id > 0) style="background: url('/image/{{$item->coverImage->id}}/{{$item->coverImage->file_name}}?w=120&h=120&fit=crop') no-repeat center center;" @endif ></div>
+                    <a href="/admin/gallery/{{$item->id}}/edit"><div class="thumbnail-preview-list" @if($item->cover_image_id > 0) style="background-size: contain!important; background: url('/uploads/{{$item->coverImage->id}}/{{$item->coverImage->file_name}}?w=120&h=120&fit=crop') no-repeat center center;" @endif ></div></a>
                   </td>
                   <td>
-                    <div class="thumbnail-preview-list" @if($item->featured_image_id > 0) style="background: url('/image/{{$item->featuredImage->id}}/{{$item->featuredImage->file_name}}?w=120&h=120&fit=crop') no-repeat center center;" @endif ></div>
+                    <a href="/admin/gallery/{{$item->id}}/edit"><div class="thumbnail-preview-list" @if($item->featured_image_id > 0) style="background-size: contain!important; background: url('/uploads/{{$item->featuredImage->id}}/{{$item->featuredImage->file_name}}?w=120&h=120&fit=crop') no-repeat center center;" @endif ></div></a>
                   </td>
                 </tr>
               @endforeach

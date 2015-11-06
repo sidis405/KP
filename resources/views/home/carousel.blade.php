@@ -10,7 +10,7 @@
 
             @foreach($carousel as $item)
                 <div class="item <?php if ($first) { echo 'active'; } $first=false; ?>">
-                    <img src="/image/{{$item->coverImage->id}}/{{$item->coverImage->file_name}}">
+                    <img src="/uploads/{{$item->coverImage->id}}/{{$item->coverImage->file_name}}">
                     
                 </div>
             @endforeach

@@ -77,7 +77,7 @@
             </div>
 
             <!-- Logo -->
-            <a href="index.html"><img class="logo img-responsive" src="/img/logo.svg" alt="Kastner-Pallavicino"></a>
+            <a href="/"><img class="logo img-responsive" src="/img/logo.svg" alt="Kastner-Pallavicino"></a>
             
             <!-- Navigation -->
             <nav class="navbar navbar-default" role="navigation">

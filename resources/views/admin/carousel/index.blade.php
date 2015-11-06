@@ -35,7 +35,7 @@
                 <tr data-itemId="{{{ $item->id }}}">
                 <td class="sortable-handle"><span class="glyphicon glyphicon-sort"></span></td>
                   <td >
-                    <a href="/admin/carousel/{{$item->id}}/edit"><div class="thumbnail-preview-list" @if($item->cover_image_id > 0) style="width:334px; background: url('/image/{{$item->coverImage->id}}/{{$item->coverImage->file_name}}?w=334&h=120&fit=crop') no-repeat center center;" @endif ></div></a>
+                    <a href="/admin/carousel/{{$item->id}}/edit"><div class="thumbnail-preview-list" @if($item->cover_image_id > 0) style="width:334px; background-size: contain!important;  background: url('/uploads/{{$item->coverImage->id}}/{{$item->coverImage->file_name}}?w=334&h=120&fit=crop') no-repeat center center;" @endif ></div></a>
                   </td>
                 </tr>
               @endforeach

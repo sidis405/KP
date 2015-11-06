@@ -34,7 +34,7 @@
                       <h3>Cover Image (332x306px)</h3>
                         <div class="form-group">
                           <a id="cover_image_preview">
-                              <div class="thumbnail-preview-add thumbnail-preview-add-cover" @if($press->cover_image_id > 0) style="background: url('/image/{{$press->coverImage->id}}/{{$press->coverImage->file_name}}?w=280&h=280&fit=crop') no-repeat center center;" @endif >
+                              <div class="thumbnail-preview-add thumbnail-preview-add-cover" @if($press->cover_image_id > 0) style="background-size: contain!important; background: url('/uploads/{{$press->coverImage->id}}/{{$press->coverImage->file_name}}?w=280&h=280&fit=crop') no-repeat center center;" @endif >
                                 <div class="btn">Choose a cover image</div>
                               </div>
                           </a>

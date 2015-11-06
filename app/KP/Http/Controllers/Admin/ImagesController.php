@@ -4,6 +4,7 @@ namespace KP\Http\Controllers\Admin;
 
 use KP\Repositories\GalleryRepo;
 use KP\Repositories\PressRepo;
+use KP\Repositories\CarouselRepo;
 use KP\Utils\Media;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
@@ -17,7 +18,7 @@ class ImagesController extends Controller
 
     function __construct() {
         
-        $this->models = ['gallery' => 'gallery', 'press' => 'press'];
+        $this->models = ['gallery' => 'gallery', 'press' => 'press', 'carousel' => 'carousel'];
     }
 
     public function checkIfModelIsAllowed($input_model)
@@ -28,7 +29,7 @@ class ImagesController extends Controller
     }
  
 
-    public function index(Request $request, GalleryRepo $gallery, PressRepo $press)
+    public function index(Request $request, GalleryRepo $gallery, PressRepo $press, CarouselRepo $carousel)
     {
         $model_name = $request->input('model');
         $model_route = $request->input('route');
@@ -49,7 +50,7 @@ class ImagesController extends Controller
     }
 
   
-    public function store(Request $request, Media $media, GalleryRepo $gallery, PressRepo $press)
+    public function store(Request $request, Media $media, GalleryRepo $gallery, PressRepo $press, CarouselRepo $carousel)
     {
         $model = $request->input('model');
 

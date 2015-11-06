@@ -150,7 +150,7 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Spatie\MediaLibrary\MediaLibraryServiceProvider::class,
         // 'Vinkla\Hashids\HashidsServiceProvider',
-        // 'Rutorika\Sortable\SortableServiceProvider',
+        'Rutorika\Sortable\SortableServiceProvider',
         App\Providers\BusServiceProvider::class
 
     ],

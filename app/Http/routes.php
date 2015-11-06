@@ -1,6 +1,6 @@
 <?php
 
-Route::get('/', 'StaticController@index');
+Route::get('/', '\KP\Http\Controllers\HomeController@index');
 
 
 Route::get('press.html', '\KP\Http\Controllers\PressController@index');
@@ -120,6 +120,45 @@ Route::group(array('prefix' => 'admin', 'middleware' => 'auth'), function () {
     Route::delete('press/{id}/delete_image', [
         'as'    => 'admin_delete_press',
         'uses'  => '\KP\Http\Controllers\Admin\PressController@destroyImage'
+        ]);
+
+    #   Press ROUTES
+
+    Route::post('carousel/ordina', '\Rutorika\Sortable\SortableController@sort');
+
+    Route::get('carousel', [
+        'as'    => 'admin_carousel',
+        'uses'  => '\KP\Http\Controllers\Admin\CarouselController@index'
+        ]);
+
+    Route::get('carousel/create', [
+        'as'    => 'admin_create_carousel',
+        'uses'  => '\KP\Http\Controllers\Admin\CarouselController@create'
+        ]);
+
+    Route::post('carousel', [
+        'as'    => 'admin_store_carousel',
+        'uses'  => '\KP\Http\Controllers\Admin\CarouselController@store'
+        ]);
+
+    Route::get('carousel/{id}/edit', [
+        'as'    => 'admin_edit_carousel',
+        'uses'  => '\KP\Http\Controllers\Admin\CarouselController@edit'
+        ]);
+
+    Route::post('carousel/{id}', [
+        'as'    => 'admin_store_carousel',
+        'uses'  => '\KP\Http\Controllers\Admin\CarouselController@update'
+        ]);
+
+    Route::post('carousel/{id}/remove', [
+        'as'    => 'admin_delete_carousel',
+        'uses'  => '\KP\Http\Controllers\Admin\CarouselController@destroy'
+        ]);
+
+    Route::delete('carousel/{id}/delete_image', [
+        'as'    => 'admin_delete_press',
+        'uses'  => '\KP\Http\Controllers\Admin\CarouselController@destroyImage'
         ]);
 
 });

@@ -72,7 +72,17 @@ $(document).on('click', '#confirm_cover_image', function() {
     
     // $('#selected_image_preview').html('<img style="width:280px" src="' + img + '">');
     console.log(img);
-    $('.thumbnail-preview-add-cover').attr('style', "background: url('" + img + "?w=280&h=280&fit=crop') no-repeat center center;)");
+
+    var carousel = $('#isCarousel').data('value');
+    console.log(carousel);
+    if(carousel == true)
+    {
+        img = img.replace('?w=280&h=280&fit=crop', '');
+        $('.thumbnail-preview-add-cover').attr('style', "background: url('" + img + "?w=1170&h=420&fit=crop') no-repeat center center;)");
+    }else{
+        $('.thumbnail-preview-add-cover').attr('style', "background: url('" + img + "?w=280&h=280&fit=crop') no-repeat center center;)");
+    }
+
     $('#cover_image_id').val(value);
 
 });

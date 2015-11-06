@@ -11,7 +11,7 @@
     <meta property="og:title" content="Kastner &amp; Pallavicino" /> 
     <meta property="og:description" content="Kastner &amp; Pallavicino is a Roman luxury label created by Helena Kastner and Virginia Cosentini Pallavicino, in 2015. The concept was to create a line of bodies specifically intended as an alternative to a blouse or top." />    
     <meta property="og:url" content="http://www.kastner-pallavicino.com/collection.html" />
-    <meta property="og:image" content="img/cover_facebook.jpg" />
+    <meta property="og:image" content="/img/cover_facebook.jpg" />
 
 
     <title>@yield('title')</title>
@@ -69,15 +69,15 @@
                    <div class="col-sm-6"></div>
                    <div class="col-sm-6">
                       <div class="social">
-                       <a target="_blank" href="https://www.facebook.com/pages/Kastner-Pallavicino/1409165622728869?pnref=story"><img src="img/facebook.svg" alt=""></a>
-                       <a target="_blank" href="https://instagram.com/kastner_pallavicino"><img src="img/instagram.svg" alt=""></a>
+                       <a target="_blank" href="https://www.facebook.com/pages/Kastner-Pallavicino/1409165622728869?pnref=story"><img src="/img/facebook.svg" alt=""></a>
+                       <a target="_blank" href="https://instagram.com/kastner_pallavicino"><img src="/img/instagram.svg" alt=""></a>
                       </div>
                    </div>
                </div> 
             </div>
 
             <!-- Logo -->
-            <a href="index.html"><img class="logo img-responsive" src="img/logo.svg" alt="Kastner-Pallavicino"></a>
+            <a href="index.html"><img class="logo img-responsive" src="/img/logo.svg" alt="Kastner-Pallavicino"></a>
             
             <!-- Navigation -->
             <nav class="navbar navbar-default" role="navigation">
@@ -94,7 +94,7 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse navbar-ex1-collapse">                               
                 <ul class="nav navbar-nav navbar-center">
-                  <li><a {{ checkActivePath('our_philosophy')}} href="our_philosophy.html">Our Philosophy</a></li>
+                  <li><a {{ checkActivePath('philosophy')}} href="philosophy.html">Philosophy</a></li>
                   <li><a {{ checkActivePath('collection')}} href="collection.html">Collection</a></li>
                   <li><a {{ checkActivePath('gallery')}} href="gallery.html">Gallery</a></li>
                   <li><a {{ checkActivePath('press')}} href="press.html">Press</a></li>
@@ -125,8 +125,8 @@
                 </div>
                 <div class="col-sm-4">
                   <h3>Social</h3>
-                  <a target="_blank" href="https://www.facebook.com/pages/Kastner-Pallavicino/1409165622728869?pnref=story"><img src="img/facebook.svg" alt=""></a>
-                  <a target="_blank" href="https://instagram.com/kastner_pallavicino"><img src="img/instagram.svg" alt=""></a>
+                  <a target="_blank" href="https://www.facebook.com/pages/Kastner-Pallavicino/1409165622728869?pnref=story"><img src="/img/facebook.svg" alt=""></a>
+                  <a target="_blank" href="https://instagram.com/kastner_pallavicino"><img src="/img/instagram.svg" alt=""></a>
                 </div>
               </div>
             </div>
@@ -136,7 +136,7 @@
 
                 <!-- INSTANSIVE WIDGET --><iframe src="//instansive.com/widgets/681802883da50359637c0c0516299ae37204327a.html" id="instansive_681802883d" name="instansive_681802883d"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>  
 
-                <a target="_blank" href="http://instagram.com/kastner_pallavicino"><div class="btn btn-primary"> <img src="img/instagram.svg" alt="">Follow us on Instagram</div></a>
+                <a target="_blank" href="http://instagram.com/kastner_pallavicino"><div class="btn btn-primary"> <img src="/img/instagram.svg" alt="">Follow us on Instagram</div></a>
             
             </div>
           </div>
@@ -169,10 +169,10 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6">
-          <img class="img-responsive newsletter-bg" src="img/newsletter-img.jpg" alt="">
+          <img class="img-responsive newsletter-bg" src="/img/newsletter-img.jpg" alt="">
         </div>
         <div class="col-sm-6">
-          <img class="img-responsive logo-newsletter" src="img/logo-newsletter.svg" alt="">
+          <img class="img-responsive logo-newsletter" src="/img/logo-newsletter.svg" alt="">
           <h4>To find out more about the newest arrivals and exclusive events from Kastner&amp;Pallavicino, sign up here.</h4>
           <!-- Begin MailChimp Signup Form -->        
             
@@ -216,7 +216,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="/scripts/main.js"></script>
     <script src="/cfgen-form-4/js/form.js"></script>
-
 
     <!-- Analytics -->
     <script>

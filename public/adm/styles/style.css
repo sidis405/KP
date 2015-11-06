@@ -917,6 +917,17 @@ aside.sidebar ul.sidebar-menu li a:focus {
   margin: auto;
   position: relative;
 }
+
+.thumbnail-preview-add-cover-carousel {
+  background: url(http://placehold.it/1170x420) no-repeat center center;
+  /*width: 1170px;*/
+  width: 100%;
+  /*height: 420px;*/
+  background-size: contain!important;
+  margin: auto;
+  position: relative;
+}
+
 .thumbnail-preview-add .btn {
   position: absolute;
   top: 50%;

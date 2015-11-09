@@ -2,7 +2,7 @@
 $cfg['debug'] = false;
 
 // This is the email address where you will receive the notification message
-$cfg['email_address'] = 'michele@officine06.com';
+$cfg['email_address'] = 'info@kastner-pallavicino.com';
 
 $cfg['email_from'] = '';
 

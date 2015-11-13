@@ -121,6 +121,8 @@
                        <br>
                        <br>
                        <a href="mailto:info@kastner-pallavicino.com">info@kastner-pallavicino.com</a>
+                       <br><br>
+                       <a href="#" class="newsletter-footer">Signup to our newsletter</a>
                     </p>
                 </div>
                 <div class="col-sm-4">
@@ -199,7 +201,7 @@
                 </div>
             </form>
             </div>
-            <p>By submitting you confirm that you agree to our <a href="privacy.html">privacy policy</a></p>
+            <p>By submitting you confirm that you agree to our <a href="policy.html">privacy policy</a></p>
             <!--End mc_embed_signup-->
         </div>
       </div>

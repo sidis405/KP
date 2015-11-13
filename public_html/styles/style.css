@@ -362,6 +362,9 @@ footer a {
 footer a:hover {
   color: #808080;
 }
+footer a:focus {
+  outline: none;
+}
 footer .col-sm-8 {
   border-right: 1px solid #808080;
   margin: 50px auto;

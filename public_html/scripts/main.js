@@ -118,14 +118,18 @@ $(function() {
     type:'inline',
     midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
   });
+
+});
+
+$(function() {
+checkTimeOnSiteAndRunModal();
 });
 
 
-checkTimeOnSiteAndRunModal();
+
 window.setInterval(function(){
   
   checkTimeOnSiteAndRunModal();
-  // console.log('ran check time');
 
 //}, 1000);
 }, 60000);
@@ -133,6 +137,7 @@ window.setInterval(function(){
 // console.log($.cookie('time_on_site'))
   
 function checkTimeOnSiteAndRunModal(){
+  // console.log('ran check time');
 
   if(typeof $.cookie('time_on_site') === 'undefined'){
       // your code here.
@@ -140,10 +145,10 @@ function checkTimeOnSiteAndRunModal(){
       triggerNewsLetter();
 
   }else{
-
+    // console.log('found cookie');
     var time_on_site = $.cookie('time_on_site');
     var time_now = Math.floor(new Date().getTime() / 1000);
-    console.log(time_now - time_on_site);
+    // console.log(time_now - time_on_site);
     // if( time_now - time_on_site > 1)
     if( time_now - time_on_site > 1800)
     {
@@ -157,6 +162,10 @@ function checkTimeOnSiteAndRunModal(){
 
 }
 
+$('.newsletter-footer').click(function(e){
+  e.preventDefault();
+  triggerNewsLetter();
+});
 
 
 
@@ -181,7 +190,7 @@ function triggerNewsLetter(){
 //       }, 0);      
 //    });
 //  }else{
-//     $('#newsletter').addClass('mfp-hide');
+    $('#newsletter').addClass('mfp-hide');
 //  }
    
 

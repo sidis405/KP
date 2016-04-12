@@ -60,7 +60,7 @@
                 <div class="row">
                   <div class="col-xs-12">
                     <h1>Hegel</h1>
-                    <span class="price">€240,00</span>
+                    <span class="price">€190,00</span>
                   </div>
                 </div>
 

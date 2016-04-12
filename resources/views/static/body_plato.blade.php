@@ -60,7 +60,7 @@
                 <div class="row">
                   <div class="col-xs-12">
                     <h1>Plato</h1>
-                    <span class="price">€225,00</span>
+                    <span class="price">€190,00</span>
                   </div>
                 </div>
 

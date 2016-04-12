@@ -61,7 +61,7 @@
                 <div class="row">
                   <div class="col-xs-12">
                     <h1>Socrates</h1>
-                    <span class="price">€330,00</span>
+                    <span class="price">€270,00</span>
                   </div>
                 </div>
 

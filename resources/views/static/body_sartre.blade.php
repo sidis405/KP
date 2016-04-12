@@ -61,7 +61,7 @@
                 <div class="row">
                   <div class="col-xs-12">
                     <h1>Sartre</h1>
-                    <span class="price">€315,00</span>
+                    <span class="price">€260,00</span>
                   </div>
                 </div>
 

@@ -25,7 +25,7 @@
               </a>
               <div class="caption">
                 <h3>HEGEL</h3>
-                <p>€240,00</p>               
+                <p>€190,00</p>               
               </div>
             </div>
           </div>
@@ -37,7 +37,7 @@
               </a>
               <div class="caption">
                 <h3>KANT</h3>
-                <p>€410,00</p>              
+                <p>€380,00</p>              
               </div>
             </div>
           </div>
@@ -49,7 +49,7 @@
               </a>
               <div class="caption">
                 <h3>DESCARTES</h3>
-                <p>€335,00</p>                
+                <p>€280,00</p>                
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@
               </a>
               <div class="caption">
                 <h3>SARTRE</h3>
-                <p>€315,00</p>               
+                <p>€260,00</p>               
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@
               </a>
               <div class="caption">
                 <h3>FICHTE</h3>
-                <p>€340,00</p>             
+                <p>€280,00</p>             
               </div>
             </div>
           </div>
@@ -85,7 +85,7 @@
               </a>
               <div class="caption">
                 <h3>SOCRATES</h3>
-                <p>€330,00</p>               
+                <p>€270,00</p>               
               </div>
             </div>
           </div>
@@ -97,7 +97,7 @@
              </a>
               <div class="caption">
                 <h3>RUSSEL</h3>
-                <p>€335,00</p>                
+                <p>€280,00</p>                
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@
               </a>
               <div class="caption">
                 <h3>PLATO</h3>
-                <p>€225,00</p>                
+                <p>€190,00</p>                
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@
               </a>
               <div class="caption">
                 <h3>MARX</h3>
-                <p>€320,00</p>             
+                <p>€280,00</p>             
               </div>
             </div>
           </div>
@@ -133,7 +133,7 @@
               </a>
               <div class="caption">
                 <h3>HUME</h3>
-                <p>€335,00</p>             
+                <p>€285,00</p>             
               </div>
             </div>
           </div>
@@ -145,7 +145,7 @@
               </a>
               <div class="caption">
                 <h3>ARISTOTLE</h3>
-                <p>€335,00</p>                
+                <p>280,00</p>                
               </div>
             </div>
           </div>
@@ -157,7 +157,7 @@
               </a>
               <div class="caption">
                 <h3>PANTS GOETHE BLACK</h3>
-                <p>€390,00</p>               
+                <p>€300,00</p>               
               </div>
             </div>
           </div>
@@ -169,7 +169,7 @@
               </a>
               <div class="caption">
                 <h3>PANTS GOETHE IVORY WHITE</h3>
-                <p>€390,00</p>               
+                <p>€300,00</p>               
               </div>
             </div>
           </div>

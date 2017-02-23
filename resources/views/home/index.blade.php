@@ -18,7 +18,7 @@
                 <source src="/video/kastner-pallavicino-video.mp4" type="video/mp4">               
               </video>
 
-              <a href="/our_philosophy.html"><div class="btn btn-primary">Read more</div></a>
+              <a href="/philosophy.html"><div class="btn btn-primary">Read more</div></a>
 
               
 

@@ -79,7 +79,7 @@
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                           <div class="panel-body">
-                           This skirt is a blend of silk – (while the one with the stripes is in cotton)                       
+                           This skirt is a blend of silk           
 
                           </div>
                         </div>
@@ -118,7 +118,7 @@
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                           <div class="panel-body">
-                            Bordeaux • Blue • Mustard • Pink • Olive Green • White • Black • Light Green • Dark Pink • Red • Light Red
+                           Bordeaux • Blue • Mustard • White • Black
 
                           </div>
                         </div>

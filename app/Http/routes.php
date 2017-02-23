@@ -45,7 +45,7 @@ Route::group(array('prefix' => 'admin', 'middleware' => 'auth'), function () {
     Route::post('model/upload_attachment', 'Admin\AttachmentsController@store');
 
     Route::get('/', function(){
-        return redirect()->to('admin/gallery');
+        return redirect()->to('admin/press');
     });
 
     #   Gallery ROUTES

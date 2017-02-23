@@ -43,7 +43,7 @@
     <link href="/cfgen-form-4/css/form.css" rel="stylesheet" type="text/css">
 
     <!-- Google Fonts -->   
-    <link href='https://fonts.googleapis.com/css?family=Quicksand:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand:400,300,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="/styles/style.css">
 
@@ -95,7 +95,15 @@
               <div class="collapse navbar-collapse navbar-ex1-collapse">                               
                 <ul class="nav navbar-nav navbar-center">
                   <li><a {{ checkActivePath('philosophy')}} href="philosophy.html">Philosophy</a></li>
-                  <li><a {{ checkActivePath('collection')}} href="collection.html">Collection</a></li>
+                  <!-- <li><a  href="collection.html">Collection</a></li> -->
+                  <li class="dropdown">
+                    <a {{ checkActivePath('collection')}} href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Collections <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="collection-3.html">Collection <span style="font-family: 'Times New Roman';">III</span></a></li>
+                      <li><a href="collection-2.html">Collection <span style="font-family: 'Times New Roman';">II</span></a></li>
+                      <li><a href="collection-1.html">Collection <span style="font-family: 'Times New Roman';">I</span></a></li>
+                    </ul>
+                  </li>
                   <li><a {{ checkActivePath('gallery')}} href="gallery.html">Gallery</a></li>
                   <li><a {{ checkActivePath('press')}} href="press.html">Press</a></li>
                   <li><a class="last-nav {{ checkActivePath('contact', true)}}" href="contact.html">Contact</a></li>                  
@@ -112,18 +120,17 @@
             <div class="col-sm-6">
               <div class="row">
                 <div class="col-sm-8">
-                  <h3>Kastner &amp; Pallavicino S.r.l.<br> Italy</h3>
-                    <p>
-                       CONTACT<br><br>
+                  <div class="footer__box">                  
+                    <a href="/"><img class="logo img-responsive" src="/img/logo.svg" alt="Kastner-Pallavicino"></a>
+                    <p style="margin-bottom: 0;">
                        Via Margutta, 33<br>
-                       00187 Rome<br><br>
+                       00187 Rome<br>
                        Italy
                        <br>
                        <br>
                        <a href="mailto:info@kastner-pallavicino.com">info@kastner-pallavicino.com</a>
-                       <br><br>
-                       <a href="#" class="newsletter-footer">Signup to our newsletter</a>
                     </p>
+                  </div>
                 </div>
                 <div class="col-sm-4">
                   <h3>Social</h3>
@@ -132,13 +139,11 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 instagram-widget"> 
+            <div class="col-sm-6 last-footer"> 
+                 <h3>Newsletter</h3>
+                  <a href="#" class="newsletter-footer">Signup to our newsletter</a>
                 
-                <a target="_blank" href="http://instagram.com/kastner_pallavicino"><span>@kastner_pallavicino</span></a>
-
-                <!-- INSTANSIVE WIDGET --><iframe src="//instansive.com/widgets/681802883da50359637c0c0516299ae37204327a.html" id="instansive_681802883d" name="instansive_681802883d"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>  
-
-                <a target="_blank" href="http://instagram.com/kastner_pallavicino"><div class="btn btn-primary"> <img src="/img/instagram.svg" alt="">Follow us on Instagram</div></a>
+                
             
             </div>
           </div>

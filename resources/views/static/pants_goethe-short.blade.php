@@ -120,7 +120,7 @@
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                           <div class="panel-body">
-                           Bordeaux • Blue • Mustard • Pink • Olive Green • White • Black • Light Green • Dark Pink • Red • Light Red
+                           Bordeaux • Blue • Mustard • White • Black
 
                           </div>
                         </div>

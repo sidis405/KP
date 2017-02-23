@@ -60,7 +60,7 @@
                 <div class="row">
                   <div class="col-xs-12">
                     <h1>Hume</h1>
-                    <span class="price">€285,00</span>
+                    <span class="price">€230,00</span>
                   </div>
                 </div>
 

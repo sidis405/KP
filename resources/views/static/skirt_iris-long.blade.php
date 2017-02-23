@@ -61,7 +61,7 @@
                 <div class="row">
                   <div class="col-xs-12">
                     <h1>Iris Long</h1>
-                    <span class="price">€300,00</span>
+                    <span class="price">€280,00</span>
                   </div>
                 </div>
 
@@ -120,7 +120,7 @@
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                           <div class="panel-body">
-                            Bordeaux • Blue • Mustard • Pink • Olive Green • White • Black • Light Green • Dark Pink • Red • Light Red
+                            Bordeaux • Blue • Mustard • White • Black
 
                           </div>
                         </div>

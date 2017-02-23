@@ -9,9 +9,9 @@
                 <!-- main slider carousel -->
                 <div class="row">
                     <div class="col-md-12" id="slider">
-                        
                             <div class="col-md-12" id="carousel-bounding-box">
                                 <div id="myCarousel" class="carousel slide">
+                                    <div class="sold-out">Sold out</div>
                                     <!-- main slider carousel items -->
                                     <div class="carousel-inner">
                                         

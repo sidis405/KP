@@ -99,14 +99,15 @@
                   <li class="dropdown">
                     <a {{ checkActivePath('collection')}} href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Collections <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="collection-3.html">Collection <span style="font-family: 'Times New Roman';">III</span></a></li>
-                      <li><a href="collection-2.html">Collection <span style="font-family: 'Times New Roman';">II</span></a></li>
-                      <li><a href="collection-1.html">Collection <span style="font-family: 'Times New Roman';">I</span></a></li>
+                      <li><a href="/collection-4.html">Collection <span style="font-family: 'Times New Roman';">IV</span></a></li>
+                      <li><a href="/collection-3.html">Collection <span style="font-family: 'Times New Roman';">III</span></a></li>
+                      <li><a href="/collection-2.html">Collection <span style="font-family: 'Times New Roman';">II</span></a></li>
+                      <li><a href="/collection-1.html">Collection <span style="font-family: 'Times New Roman';">I</span></a></li>
                     </ul>
                   </li>
-                  <li><a {{ checkActivePath('gallery')}} href="gallery.html">Gallery</a></li>
-                  <li><a {{ checkActivePath('press')}} href="press.html">Press</a></li>
-                  <li><a class="last-nav {{ checkActivePath('contact', true)}}" href="contact.html">Contact</a></li>                  
+                  <li><a {{ checkActivePath('gallery')}} href="/gallery.html">Gallery</a></li>
+                  <li><a {{ checkActivePath('press')}} href="/press.html">Press</a></li>
+                  <li><a class="last-nav {{ checkActivePath('contact', true)}}" href="/contact.html">Contact</a></li>                  
                 </ul>
               </div><!-- /.navbar-collapse -->
             </nav>
@@ -151,7 +152,7 @@
           <div class="bottom-footer">
             <div class="row">
               <div class="col-sm-6">
-                <p>©2015 Kastner &amp; Pallavicino S.r.l. / P.Iva 13282511008 / All Rights Reserved / <a class="open-modal" href="#modal-popup">Terms &amp; Conditions</a> / <a href="policy.html">Privacy Policy</a></p>
+                <p>©2017 Kastner &amp; Pallavicino S.r.l. / P.Iva 13282511008 / All Rights Reserved / <a class="open-modal" href="#modal-popup">Terms &amp; Conditions</a> / <a href="policy.html">Privacy Policy</a></p>
               </div>
               <div class="col-sm-6">
                 <p>Web Design by <a target="_blank" href="http://officine06.com">Officine06</a></p>

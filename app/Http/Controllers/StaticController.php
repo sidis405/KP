@@ -20,6 +20,19 @@ class StaticController extends Controller
         abort(404);
     }
 
+    public function catch_all_folder($num, $param)
+    {
+        $folder = 'collection' . $num;
+
+        if(view()->exists('/static.' .$folder . '/' . $param)){
+            \Session::put('path', $param);
+            $title = prepTitle($param, 'Kastner &amp; Pallavicino');
+            return view('/static.' .$folder . '/' . $param, compact('title'));
+        }
+        // return $param;
+        abort(404);
+    }
+
     public function index()
     {
         return view('static.index');

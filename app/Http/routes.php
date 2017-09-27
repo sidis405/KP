@@ -7,6 +7,7 @@ Route::get('press.html', '\KP\Http\Controllers\PressController@index');
 Route::get('gallery.html', '\KP\Http\Controllers\GalleryController@index');
 Route::get('gallery.html/loadMoreGalleries', '\KP\Http\Controllers\GalleryController@loadMore');
 
+Route::get('collection{num}/{param}.html', 'StaticController@catch_all_folder');
 Route::get('{param}.html', 'StaticController@catch_all');
 
 

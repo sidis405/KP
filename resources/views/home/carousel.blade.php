@@ -1,5 +1,5 @@
  <!-- main carousel -->
-        <img class="mobile-main-img img-responsive" src="/image/{{$carousel[0]->coverImage->id}}/{{$carousel[0]->coverImage->file_name}}" alt="">
+        <!-- <img class="mobile-main-img img-responsive" src="/image/{{$carousel[0]->coverImage->id}}/{{$carousel[0]->coverImage->file_name}}" alt=""> -->
         <div id="main-carousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                {!! carouselIndicators($carousel) !!}

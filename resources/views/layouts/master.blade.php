@@ -99,6 +99,7 @@
                   <li class="dropdown">
                     <a {{ checkActivePath('collection')}} href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Collections <span class="caret"></span></a>
                     <ul class="dropdown-menu">
+                      <li><a href="/collection-5.html">Collection <span style="font-family: 'Times New Roman';">V</span></a></li>
                       <li><a href="/collection-4.html">Collection <span style="font-family: 'Times New Roman';">IV</span></a></li>
                       <li><a href="/collection-3.html">Collection <span style="font-family: 'Times New Roman';">III</span></a></li>
                       <li><a href="/collection-2.html">Collection <span style="font-family: 'Times New Roman';">II</span></a></li>

@@ -1191,7 +1191,7 @@ video {
     display: block;
   }
   #main-carousel {
-    display: none;
+    // display: none;
   }
   .sidebar .col-sm-6:first-of-type {
     padding-right: 15px;
